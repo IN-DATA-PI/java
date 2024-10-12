@@ -16,14 +16,14 @@ public class Dados {
     private Integer outubro;
     private Integer novembro;
     private Integer dezembro;
-    private Integer total;
+    private Double total;
 
 
     public Dados() {
 
     }
 
-    public Dados(Integer idDados, String dp, String natureza, Integer ano, Integer janeiro, Integer fevereiro, Integer marco, Integer abril, Integer junho, Integer maio, Integer julho, Integer agosto, Integer setembro, Integer outubro, Integer novembro, Integer dezembro, Integer total) {
+    public Dados(Integer idDados, String dp, String natureza, Integer ano, Integer janeiro, Integer fevereiro, Integer marco, Integer abril, Integer junho, Integer maio, Integer julho, Integer agosto, Integer setembro, Integer outubro, Integer novembro, Integer dezembro, Double total) {
         this.idDados = idDados;
         this.dp = dp;
         this.natureza = natureza;
@@ -171,12 +171,12 @@ public class Dados {
         this.dezembro = dezembro;
     }
 
-    public Integer getTotal() {
+    public Double getTotal() {
         System.out.println(janeiro);
         return total;
     }
 
-    public void setTotal(Integer total) {
+    public void setTotal(Double total) {
         this.total = total;
     }
 

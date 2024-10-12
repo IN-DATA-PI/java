@@ -50,29 +50,34 @@ public class LeitorExcel {
                     continue;
                 }
 
-                Integer aux = 1;
-                String auxCol = colunas.get(1);
-                if (row.getRowNum() > 17){
-//                    con.execute("""
-//                    INSERT INTO dados (natureza)
-//                    VALUES ('%s');
-//                    """.formatted(row.getCell(0).getStringCellValue()));
-                    for (int i = 0; i <= 12; i++) {
-                        con.execute("""
-                        INSERT INTO dados (%s)
-                        VALUES (%d);
-                        """.formatted(colunas.get(i + 1),converterParaIntOuZero(row.getCell(aux).getStringCellValue())));
-                        aux++;
+                if (row.getRowNum() > 16){
+                    // Construindo a SQL para inserir todas as colunas de uma vez
+                    StringBuilder sql = new StringBuilder("INSERT INTO dados (");
+
+                    // Adiciona os nomes das colunas ao comando SQL
+                    for (int i = 1; i < colunas.size(); i++) {
+                        sql.append(colunas.get(i));
+                        if (i < colunas.size() - 1) {
+                            sql.append(", ");
+                        }
                     }
+                    sql.append(") VALUES (");
+
+                    // Adiciona os valores correspondentes das células ao comando SQL
+                    for (int i = 1; i < colunas.size(); i++) {
+                        Double valor = converterParaDoubleOuZero(row.getCell(i).getStringCellValue());
+                        sql.append(valor);
+                        if (i < colunas.size() - 1) {
+                            sql.append(", ");
+                        }
+                    }
+                    sql.append(");");
+                    // Executa o comando SQL
+                    con.execute(sql.toString());
                 }
-
-                System.out.println(colunas);
-                System.out.println("Lendo linha " + row.getRowNum());
-
-
-                dadosExtraidos.add(dados);
             }
 
+            System.out.println(colunas);
 
             // Fechando o workbook após a leitura
             workbook.close();
@@ -90,13 +95,11 @@ public class LeitorExcel {
         return data.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
     }
 
-    public static Integer converterParaIntOuZero(String valor) {
+    public static Double converterParaDoubleOuZero(String valor) {
         try {
-            // Tenta converter a String para int
-            return Integer.parseInt(valor);
+            return Double.parseDouble(valor);
         } catch (NumberFormatException e) {
-            // Se falhar, retorna 0
-            return 0;
+            return 0.0;
         }
     }
 }
