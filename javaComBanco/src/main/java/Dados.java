@@ -4,7 +4,7 @@ public class Dados {
     private String dp;
     private String natureza;
     private Integer ano;
-    private String janeiro;
+    private Integer janeiro;
     private Integer fevereiro;
     private Integer marco;
     private Integer abril;
@@ -19,11 +19,11 @@ public class Dados {
     private Integer total;
 
 
-    public Dados(){
+    public Dados() {
 
     }
 
-    public Dados(Integer idDados, String dp, String natureza, Integer ano, String janeiro, Integer fevereiro, Integer marco, Integer abril, Integer junho, Integer maio, Integer julho, Integer agosto, Integer setembro, Integer outubro, Integer novembro, Integer dezembro, Integer total) {
+    public Dados(Integer idDados, String dp, String natureza, Integer ano, Integer janeiro, Integer fevereiro, Integer marco, Integer abril, Integer junho, Integer maio, Integer julho, Integer agosto, Integer setembro, Integer outubro, Integer novembro, Integer dezembro, Integer total) {
         this.idDados = idDados;
         this.dp = dp;
         this.natureza = natureza;
@@ -75,11 +75,11 @@ public class Dados {
         this.ano = ano;
     }
 
-    public String getJaneiro() {
+    public Integer getJaneiro() {
         return janeiro;
     }
 
-    public void setJaneiro(String janeiro) {
+    public void setJaneiro(Integer janeiro) {
         this.janeiro = janeiro;
     }
 
