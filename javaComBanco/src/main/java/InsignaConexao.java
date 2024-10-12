@@ -24,4 +24,8 @@ public class InsignaConexao {
     public JdbcTemplate getConexaoComBanco() {
         return conexaoComBanco;
     }
+
+    public void setConexaoComBanco(JdbcTemplate conexaoComBanco) {
+        this.conexaoComBanco = conexaoComBanco;
+    }
 }

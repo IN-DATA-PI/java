@@ -1,5 +1,6 @@
 import java.io.IOException;
 import java.io.InputStream;
+import java.sql.PreparedStatement;
 import java.time.LocalDate;
 import java.time.ZoneId;
 import java.util.ArrayList;
@@ -10,7 +11,7 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.apache.poi.ss.usermodel.Cell;
+import org.springframework.jdbc.core.JdbcTemplate;
 
 public class LeitorExcel {
 
@@ -30,6 +31,9 @@ public class LeitorExcel {
             Sheet sheet = workbook.getSheetAt(0);
 
             List<Dados> dadosExtraidos = new ArrayList<>();
+
+            InsignaConexao conexao = new InsignaConexao();
+            JdbcTemplate con = conexao.getConexaoComBanco();
 
             // Iterando sobre as linhas da planilha
             for (Row row : sheet) {
@@ -55,7 +59,6 @@ public class LeitorExcel {
                 dados.setNatureza(row.getCell(0).getStringCellValue());
 //                dados.setAno((int)row.getCell(3).getNumericCellValue());
 
-
  //               String stringValue = row.getCell(1).getStringCellValue();
 
                 // Remove tudo o que não for número
@@ -63,7 +66,11 @@ public class LeitorExcel {
 
                 // Define o valor de Janeiro com o número
 //                dados.setJaneiro(somenteNumeros);
-                dados.setJaneiro((row.getCell(1).getStringCellValue()));
+                con.execute("""
+                INSERT INTO dados (janeiro)
+                VALUES ('%s');
+                """.formatted(row.getCell(1).getStringCellValue()));
+
 //                dados.setFevereiro((int)row.getCell(2).getNumericCellValue());
 //                dados.setMarco((int)row.getCell(3).getNumericCellValue());
 //                dados.setAbril((int)row.getCell(4).getNumericCellValue());
@@ -79,6 +86,7 @@ public class LeitorExcel {
 
                 dadosExtraidos.add(dados);
             }
+
 
             // Fechando o workbook após a leitura
             workbook.close();

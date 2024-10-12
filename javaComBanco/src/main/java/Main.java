@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
@@ -20,6 +21,7 @@ public class Main {
         LeitorExcel leitorExcel = new LeitorExcel();
         List<Dados> dadosExtraidos = leitorExcel.extrairDados(nomeArquivo, arquivo);
 
+
         // Fechando o arquivo após a extração
         arquivo.close();
 
@@ -28,11 +30,8 @@ public class Main {
             System.out.println(dado);
         }
 
-
-
         InsignaConexao conexao = new InsignaConexao();
         JdbcTemplate con = conexao.getConexaoComBanco();
-
 
 //        con.execute("""
 //                create table dados (
@@ -58,13 +57,14 @@ public class Main {
 //        con.execute("""
 //                Drop table dados""");
 
-        Dados dados = new Dados();
-        String janeiro = dados.getJaneiro();
-        con.update("""
-                INSERT INTO dados (janeiro)
-                VALUES (%s);
-                """.formatted(janeiro));
-        System.out.println(janeiro);
+//        Dados dados = new Dados();
+//        List<Dados> janeiro = new ArrayList<>();
+//        janeiro.add(Dados.getJaneiro());
+//        con.update("""
+//                INSERT INTO dados (janeiro)
+//                VALUES (%s);
+//                """.formatted(janeiro));
+//        System.out.println(janeiro);
 
 //        List<Dados> dadosDoBanco = con.query("SELECT * FROM dados", new BeanPropertyRowMapper<>(Dados.class));
 //        System.out.println(dadosDoBanco);
