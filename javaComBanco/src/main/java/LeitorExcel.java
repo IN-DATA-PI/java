@@ -25,7 +25,6 @@ public class LeitorExcel {
             } else {
                 workbook = new HSSFWorkbook(arquivo);
             }
-
             // Acessando a primeira planilha
             Sheet sheet = workbook.getSheetAt(0);
 
@@ -37,8 +36,6 @@ public class LeitorExcel {
 
             // Iterando sobre as linhas da planilha
             for (Row row : sheet) {
-                Dados dados = new Dados();
-
                 if (row.getRowNum() == 0) {
                     System.out.println("\nLendo cabeçalho");
                     for (int i = 0; i < 14; i++) {
@@ -50,12 +47,14 @@ public class LeitorExcel {
                     continue;
                 }
 
-                if (row.getRowNum() > 16){
+                String palavraProcurada = "Roubo";
+                String valorCelula = row.getCell(0).getStringCellValue().toLowerCase();
+                if (valorCelula.contains(palavraProcurada.toLowerCase())){
                     // Construindo a SQL para inserir todas as colunas de uma vez
                     StringBuilder sql = new StringBuilder("INSERT INTO dados (");
 
                     // Adiciona os nomes das colunas ao comando SQL
-                    for (int i = 1; i < colunas.size(); i++) {
+                    for (int i = 0; i < colunas.size(); i++) {
                         sql.append(colunas.get(i));
                         if (i < colunas.size() - 1) {
                             sql.append(", ");
@@ -64,9 +63,15 @@ public class LeitorExcel {
                     sql.append(") VALUES (");
 
                     // Adiciona os valores correspondentes das células ao comando SQL
-                    for (int i = 1; i < colunas.size(); i++) {
-                        Double valor = converterParaDoubleOuZero(row.getCell(i).getStringCellValue());
-                        sql.append(valor);
+                    for (int i = 0; i < colunas.size(); i++) {
+                        if (i != 0) {
+                            Double valorNum = converterParaDoubleOuZero(row.getCell(i).getStringCellValue());
+                            sql.append(valorNum);
+                        } else{
+                            String valorStr = row.getCell(i).getStringCellValue();
+                            sql.append("'").append(valorStr).append("'");
+                        }
+
                         if (i < colunas.size() - 1) {
                             sql.append(", ");
                         }
