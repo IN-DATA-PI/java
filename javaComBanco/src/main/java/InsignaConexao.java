@@ -1,11 +1,5 @@
 import org.apache.commons.dbcp2.BasicDataSource;
-import org.apache.poi.ss.usermodel.Workbook;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.springframework.jdbc.core.JdbcTemplate;
-
-import java.io.InputStream;
-import java.nio.file.Files;
-import java.nio.file.Path;
 
 public class InsignaConexao {
 
@@ -16,7 +10,7 @@ public class InsignaConexao {
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
         dataSource.setUrl("jdbc:mysql://localhost:3306/Insigna?useSSL=false&serverTimezone=UTC");
         dataSource.setUsername("root");
-        dataSource.setPassword("102030");
+        dataSource.setPassword("25117195");
 
         conexaoComBanco = new JdbcTemplate(dataSource);
     }

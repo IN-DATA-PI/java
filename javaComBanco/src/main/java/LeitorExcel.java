@@ -1,8 +1,9 @@
 import java.io.IOException;
 import java.io.InputStream;
-import java.sql.PreparedStatement;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.ZoneId;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -10,9 +11,11 @@ import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.springframework.jdbc.core.JdbcTemplate;
-import software.amazon.awssdk.services.s3.endpoints.internal.Value;
 
 public class LeitorExcel {
+
+    // Formatter para formatar a data e hora no formato desejado
+    private static final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy 'às' HH:mm");
 
     public List<Dados> extrairDados(String nomeArquivo, InputStream arquivo) {
         try {
@@ -49,7 +52,10 @@ public class LeitorExcel {
 
                 String palavraProcurada = "Roubo";
                 String valorCelula = row.getCell(0).getStringCellValue().toLowerCase();
-                if (valorCelula.contains(palavraProcurada.toLowerCase())){
+                LocalDateTime dataHoraAtual = LocalDateTime.now();
+                String dataHoraFormatada = dataHoraAtual.format(formatter);
+
+                if (valorCelula.contains(palavraProcurada.toLowerCase())) {
                     // Construindo a SQL para inserir todas as colunas de uma vez
                     StringBuilder sql = new StringBuilder("INSERT INTO dados (");
 
@@ -67,7 +73,7 @@ public class LeitorExcel {
                         if (i != 0) {
                             Double valorNum = converterParaDoubleOuZero(row.getCell(i).getStringCellValue());
                             sql.append(valorNum);
-                        } else{
+                        } else {
                             String valorStr = row.getCell(i).getStringCellValue();
                             sql.append("'").append(valorStr).append("'");
                         }
@@ -77,8 +83,17 @@ public class LeitorExcel {
                         }
                     }
                     sql.append(");");
+
                     // Executa o comando SQL
-                    con.execute(sql.toString());
+                    try {
+                        con.execute(sql.toString());
+                        System.out.println("[" + dataHoraFormatada + "] Registro inserido com sucesso: " + sql.toString());
+                    } catch (Exception e) {
+                        System.err.println("[" + dataHoraFormatada + "] Erro ao inserir registro: " + sql.toString());
+                        e.printStackTrace();
+                    }
+                } else {
+                    System.out.println("[" + dataHoraFormatada + "] Linha ignorada. Palavra procurada não encontrada: " + valorCelula);
                 }
             }
 
