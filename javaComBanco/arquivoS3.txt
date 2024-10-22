@@ -1,0 +1,1 @@
+Enviando meu primeiro arquivo da EC2 para o bucket S3
