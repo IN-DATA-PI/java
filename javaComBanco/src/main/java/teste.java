@@ -1,4 +1,3 @@
-
 import software.amazon.awssdk.core.sync.ResponseTransformer;
 import software.amazon.awssdk.services.s3.S3Client;
 import software.amazon.awssdk.services.s3.model.*;
@@ -13,11 +12,21 @@ public class teste {
     public static void main(String[] args) {
         S3Provider s3Prov = new S3Provider();
         S3Client s3Client = s3Prov.getS3Client();
-        String bucketName = "s3-insigna-indata";
 
-        // *************************************
-        // *   Listando e baixando arquivos    *
-        // *************************************
+        // *******************************
+        // *   Primeiro Bucket            *
+        // *******************************
+        String bucketName = "s3-insigna";
+        processarBucket(s3Client, bucketName, false);
+
+        // *******************************
+        // *   Segundo Bucket             *
+        // *******************************
+        String segundoBucketName = "s3-insigna-2023"; // Altere para o nome correto do segundo bucket
+        processarBucket(s3Client, segundoBucketName, true);
+    }
+
+    public static void processarBucket(S3Client s3Client, String bucketName, boolean usarAnoFixo) {
         try {
             List<S3Object> objects = s3Client.listObjects(ListObjectsRequest.builder().bucket(bucketName).build()).contents();
             System.out.println("Baixando arquivos do bucket " + bucketName + ":");
@@ -34,7 +43,7 @@ public class teste {
                 File file = new File(object.key());
                 Files.copy(inputStream, file.toPath());
 
-                processarArquivo(file);
+                processarArquivo(file, usarAnoFixo); // Passa o flag para usarAnoFixo
 
                 System.out.println("Arquivo processado com sucesso: " + object.key());
             }
@@ -46,13 +55,13 @@ public class teste {
     // *************************************
     // *   Processando cada arquivo Excel  *
     // *************************************
-    public static void processarArquivo(File arquivo) {
+    public static void processarArquivo(File arquivo, boolean usarAnoFixo) {
         try {
             InputStream inputStream = Files.newInputStream(arquivo.toPath());
             String nomeArquivo = arquivo.getName();
 
             LeitorExcel leitorExcel = new LeitorExcel();
-            List<Dados> dadosExtraidos = leitorExcel.extrairDados(nomeArquivo, inputStream);
+            List<Dados> dadosExtraidos = leitorExcel.extrairDados(nomeArquivo, inputStream, usarAnoFixo); // Passa o flag
 
             inputStream.close();
 

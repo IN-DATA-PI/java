@@ -10,7 +10,7 @@ import java.util.List;
 
 public class LeitorExcel {
 
-    public List<Dados> extrairDados(String nomeArquivo, InputStream arquivo) {
+    public List<Dados> extrairDados(String nomeArquivo, InputStream arquivo, boolean anoFixo) {
         List<Dados> dadosExtraidos = new ArrayList<>();
 
         try {
@@ -28,7 +28,12 @@ public class LeitorExcel {
             JdbcTemplate con = conexao.getConexaoComBanco();
 
             String dp = extrairDP(nomeArquivo);
-            Integer ano = extrairAno(nomeArquivo);
+            Integer ano;
+            if (anoFixo) {
+                ano = 2023; // Ano fixo para o segundo bucket
+            } else {
+                ano = extrairAno(nomeArquivo); // Extrair o ano do nome do arquivo
+            }
 
             for (Row row : sheet) {
                 if (row.getRowNum() == 0) {
@@ -37,7 +42,6 @@ public class LeitorExcel {
 
                 String palavraProcurada = "Roubo";
                 String valorCelula = row.getCell(0).getStringCellValue().toLowerCase();
-
                 String natureza = row.getCell(0).getStringCellValue();
 
                 if (valorCelula.contains(palavraProcurada.toLowerCase())) {
@@ -86,7 +90,7 @@ public class LeitorExcel {
     }
 
     private String extrairDP(String nomeArquivo) {
-        int inicio = nomeArquivo.indexOf("-") + 1; // Começa após o "-"
+        int inicio = nomeArquivo.indexOf("-") + 1;
         int fim = nomeArquivo.indexOf("_");
 
         return nomeArquivo.substring(inicio, fim).trim();
