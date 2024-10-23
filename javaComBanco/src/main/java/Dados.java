@@ -176,8 +176,8 @@ public class Dados {
         return total;
     }
 
-    public void setTotal(Double total) {
-        this.total = total;
+    public void setTotal(int total) {
+        this.total = (double) total;
     }
 
     @Override
