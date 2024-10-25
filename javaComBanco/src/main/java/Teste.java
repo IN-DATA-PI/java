@@ -8,7 +8,7 @@ import java.io.InputStream;
 import java.nio.file.Files;
 import java.util.List;
 
-public class teste {
+public class Teste {
     public static void main(String[] args) {
         S3Provider s3Prov = new S3Provider();
         S3Client s3Client = s3Prov.getS3Client();
