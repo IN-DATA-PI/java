@@ -15,17 +15,21 @@ public class Main {
     public static void main(String[] args) {
         S3Provider s3Prov = new S3Provider();
         S3Client s3Client = s3Prov.getS3Client();
-        String bucketName1 = "s3-insigna";
-        String bucketName2 = "s3-insigna-2023"; // Nome do segundo bucket
 
-        // Processar primeiro bucket
+        // *******************************
+        // *   Primeiro Bucket            *
+        // *******************************
+        String bucketName1 = "s3-insigna";
         processarBucket(s3Client, bucketName1, false);
 
-        // Processar segundo bucket
+        // *******************************
+        // *   Segundo Bucket             *
+        // *******************************
+        String bucketName2 = "s3-insigna-2023";
         processarBucket(s3Client, bucketName2, true);
     }
 
-    public static void processarBucket(S3Client s3Client, String bucketName, boolean anoFixo) {
+    public static void processarBucket(S3Client s3Client, String bucketName, boolean usarAnoFixo) {
         try {
             List<S3Object> objects = s3Client.listObjects(ListObjectsRequest.builder().bucket(bucketName).build()).contents();
             System.out.println("Baixando arquivos do bucket " + bucketName + ":");
@@ -42,16 +46,12 @@ public class Main {
                 File file = new File(object.key());
                 Files.copy(inputStream, file.toPath());
 
-                // Chamar extrairDados com o parâmetro anoFixo
-                LeitorExcel leitorExcel = new LeitorExcel();
-                List<Dados> dadosExtraidos = leitorExcel.extrairDados(object.key(), inputStream, anoFixo);
+                // Chama o método para processar o arquivo Excel
+                processarArquivo(file, usarAnoFixo); // Passa o flag usarAnoFixo
 
                 inputStream.close();
 
-                System.out.println("Dados extraídos do arquivo " + object.key() + ":");
-                for (Dados dado : dadosExtraidos) {
-                    System.out.println(dado);
-                }
+                System.out.println("Arquivo processado com sucesso: " + object.key());
 
                 if (file.delete()) {
                     System.out.println("Arquivo " + object.key() + " deletado com sucesso.");
@@ -61,6 +61,26 @@ public class Main {
             }
         } catch (IOException | S3Exception e) {
             System.err.println("Erro ao baixar e processar arquivos: " + e.getMessage());
+        }
+    }
+
+    public static void processarArquivo(File arquivo, boolean usarAnoFixo) {
+        try {
+            InputStream inputStream = Files.newInputStream(arquivo.toPath());
+            String nomeArquivo = arquivo.getName();
+
+            LeitorExcel leitorExcel = new LeitorExcel();
+            List<Dados> dadosExtraidos = leitorExcel.extrairDados(nomeArquivo, inputStream, usarAnoFixo); // Passa o flag usarAnoFixo
+
+            inputStream.close();
+
+            System.out.println("Dados extraídos do arquivo " + nomeArquivo + ":");
+            for (Dados dado : dadosExtraidos) {
+                System.out.println(dado);
+            }
+
+        } catch (IOException e) {
+            System.err.println("Erro ao processar o arquivo " + arquivo.getName() + ": " + e.getMessage());
         }
     }
 }
