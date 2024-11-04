@@ -4,7 +4,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 public class InsignaConexao {
 
     private JdbcTemplate conexaoComBanco;
-
+//
     public InsignaConexao(){
         BasicDataSource dataSource = new BasicDataSource();
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
