@@ -1,6 +1,6 @@
-public class Dados {
+public class Roubos {
 
-    private Integer idDados;
+    private Integer idRoubos;
     private String dp;
     private String natureza;
     private Integer ano;
@@ -19,12 +19,12 @@ public class Dados {
     private Double total;
 
 
-    public Dados() {
+    public Roubos() {
 
     }
 
-    public Dados(Integer idDados, String dp, String natureza, Integer ano, Integer janeiro, Integer fevereiro, Integer marco, Integer abril, Integer junho, Integer maio, Integer julho, Integer agosto, Integer setembro, Integer outubro, Integer novembro, Integer dezembro, Double total) {
-        this.idDados = idDados;
+    public Roubos(Integer idRoubos, String dp, String natureza, Integer ano, Integer janeiro, Integer fevereiro, Integer marco, Integer abril, Integer junho, Integer maio, Integer julho, Integer agosto, Integer setembro, Integer outubro, Integer novembro, Integer dezembro, Double total) {
+        this.idRoubos = idRoubos;
         this.dp = dp;
         this.natureza = natureza;
         this.ano = ano;
@@ -43,12 +43,12 @@ public class Dados {
         this.total = total;
     }
 
-    public Integer getIdDados() {
-        return idDados;
+    public Integer getIdRoubos() {
+        return idRoubos;
     }
 
-    public void setIdDados(Integer idDados) {
-        this.idDados = idDados;
+    public void setIdRoubos(Integer idRoubos) {
+        this.idRoubos = idRoubos;
     }
 
     public String getDp() {
@@ -182,8 +182,8 @@ public class Dados {
 
     @Override
     public String toString() {
-        return "Dados{" +
-                "idDados=" + idDados +
+        return "Roubos{" +
+                "idDados=" + idRoubos +
                 ", dp='" + dp + '\'' +
                 ", natureza='" + natureza + '\'' +
                 ", ano=" + ano +

@@ -81,12 +81,12 @@ public class Main {
             String nomeArquivo = arquivo.getName();
 
             LeitorExcel leitorExcel = new LeitorExcel();
-            List<Dados> dadosExtraidos = leitorExcel.extrairDados(nomeArquivo, inputStream, usarAnoFixo); // Passa o flag usarAnoFixo
+            List<Roubos> roubosExtraidos = leitorExcel.extrairDados(nomeArquivo, inputStream, usarAnoFixo); // Passa o flag usarAnoFixo
 
             inputStream.close();
 
-            System.out.println("Dados extraídos do arquivo " + nomeArquivo + ":");
-            for (Dados dado : dadosExtraidos) {
+            System.out.println("Roubos extraídos do arquivo " + nomeArquivo + ":");
+            for (Roubos dado : roubosExtraidos) {
                 System.out.println(dado);
             }
 
