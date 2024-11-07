@@ -1,0 +1,60 @@
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Baixando arquivos do bucket s3-lab-reynald:
+Baixando arquivo: OcorrenciaMensal(Criminal)-001 DP - Sé_20241104_200805.xlsx
+
+Iniciando leitura do arquivo OcorrenciaMensal(Criminal)-001 DP - Sé_20241104_200805.xlsx
+
+285
+Registro inserido: Dados{idDados=null, dp='001 DP - Sé', natureza='TOTAL DE ROUBO - OUTROS (1)', ano=2024285, fevereiro228, marco=270, abril=259, maio=229, junho=240, julho=282, agosto=212, setembro=199, outubro=0, novembro=0, dezembro=0, total=2204.0}
+285
+Registro inserido: Dados{idDados=null, dp='001 DP - Sé', natureza='ROUBO - OUTROS', ano=2024285, fevereiro227, marco=270, abril=258, maio=229, junho=238, julho=282, agosto=211, setembro=199, outubro=0, novembro=0, dezembro=0, total=2199.0}
+4
+Registro inserido: Dados{idDados=null, dp='001 DP - Sé', natureza='ROUBO DE VEÍCULO', ano=20244, fevereiro3, marco=2, abril=2, maio=0, junho=3, julho=5, agosto=1, setembro=2, outubro=0, novembro=0, dezembro=0, total=22.0}
+0
+Registro inserido: Dados{idDados=null, dp='001 DP - Sé', natureza='ROUBO A BANCO', ano=20240, fevereiro0, marco=0, abril=0, maio=0, junho=0, julho=0, agosto=0, setembro=0, outubro=0, novembro=0, dezembro=0, total=0.0}
+0
+Registro inserido: Dados{idDados=null, dp='001 DP - Sé', natureza='ROUBO DE CARGA', ano=20240, fevereiro1, marco=0, abril=1, maio=0, junho=2, julho=0, agosto=1, setembro=0, outubro=0, novembro=0, dezembro=0, total=5.0}
+
+Leitura do arquivo finalizada
+
+Dados extraídos do arquivo OcorrenciaMensal(Criminal)-001 DP - Sé_20241104_200805.xlsx:
+Dados{idDados=null, dp='001 DP - Sé', natureza='TOTAL DE ROUBO - OUTROS (1)', ano=2024285, fevereiro228, marco=270, abril=259, maio=229, junho=240, julho=282, agosto=212, setembro=199, outubro=0, novembro=0, dezembro=0, total=2204.0}
+Dados{idDados=null, dp='001 DP - Sé', natureza='ROUBO - OUTROS', ano=2024285, fevereiro227, marco=270, abril=258, maio=229, junho=238, julho=282, agosto=211, setembro=199, outubro=0, novembro=0, dezembro=0, total=2199.0}
+Dados{idDados=null, dp='001 DP - Sé', natureza='ROUBO DE VEÍCULO', ano=20244, fevereiro3, marco=2, abril=2, maio=0, junho=3, julho=5, agosto=1, setembro=2, outubro=0, novembro=0, dezembro=0, total=22.0}
+Dados{idDados=null, dp='001 DP - Sé', natureza='ROUBO A BANCO', ano=20240, fevereiro0, marco=0, abril=0, maio=0, junho=0, julho=0, agosto=0, setembro=0, outubro=0, novembro=0, dezembro=0, total=0.0}
+Dados{idDados=null, dp='001 DP - Sé', natureza='ROUBO DE CARGA', ano=20240, fevereiro1, marco=0, abril=1, maio=0, junho=2, julho=0, agosto=1, setembro=0, outubro=0, novembro=0, dezembro=0, total=5.0}
+Arquivo processado com sucesso: OcorrenciaMensal(Criminal)-001 DP - Sé_20241104_200805.xlsx
+Arquivo OcorrenciaMensal(Criminal)-001 DP - Sé_20241104_200805.xlsx deletado com sucesso.
+Erro ao baixar e processar arquivos: Access Denied (Service: S3, Status Code: 403, Request ID: S2QTVSQGE41NQC66, Extended Request ID: zHI3MYKjRuUtsBpX/ZD4RUy1xisuayJkN2sr0bLd4c1YqO054pgpjIVdLvD+eNK6a2qzlQZ/4iM=)
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Baixando arquivos do bucket s3-lab-reynald:
+Baixando arquivo: OcorrenciaMensal(Criminal)-001 DP - Sé_20241104_200805.xlsx
+
+Iniciando leitura do arquivo OcorrenciaMensal(Criminal)-001 DP - Sé_20241104_200805.xlsx
+
+285
+Registro inserido: Dados{idDados=null, dp='001 DP - Sé', natureza='TOTAL DE ROUBO - OUTROS (1)', ano=2024285, fevereiro228, marco=270, abril=259, maio=229, junho=240, julho=282, agosto=212, setembro=199, outubro=0, novembro=0, dezembro=0, total=2204.0}
+285
+Registro inserido: Dados{idDados=null, dp='001 DP - Sé', natureza='ROUBO - OUTROS', ano=2024285, fevereiro227, marco=270, abril=258, maio=229, junho=238, julho=282, agosto=211, setembro=199, outubro=0, novembro=0, dezembro=0, total=2199.0}
+4
+Registro inserido: Dados{idDados=null, dp='001 DP - Sé', natureza='ROUBO DE VEÍCULO', ano=20244, fevereiro3, marco=2, abril=2, maio=0, junho=3, julho=5, agosto=1, setembro=2, outubro=0, novembro=0, dezembro=0, total=22.0}
+0
+Registro inserido: Dados{idDados=null, dp='001 DP - Sé', natureza='ROUBO A BANCO', ano=20240, fevereiro0, marco=0, abril=0, maio=0, junho=0, julho=0, agosto=0, setembro=0, outubro=0, novembro=0, dezembro=0, total=0.0}
+0
+Registro inserido: Dados{idDados=null, dp='001 DP - Sé', natureza='ROUBO DE CARGA', ano=20240, fevereiro1, marco=0, abril=1, maio=0, junho=2, julho=0, agosto=1, setembro=0, outubro=0, novembro=0, dezembro=0, total=5.0}
+
+Leitura do arquivo finalizada
+
+Dados extraídos do arquivo OcorrenciaMensal(Criminal)-001 DP - Sé_20241104_200805.xlsx:
+Dados{idDados=null, dp='001 DP - Sé', natureza='TOTAL DE ROUBO - OUTROS (1)', ano=2024285, fevereiro228, marco=270, abril=259, maio=229, junho=240, julho=282, agosto=212, setembro=199, outubro=0, novembro=0, dezembro=0, total=2204.0}
+Dados{idDados=null, dp='001 DP - Sé', natureza='ROUBO - OUTROS', ano=2024285, fevereiro227, marco=270, abril=258, maio=229, junho=238, julho=282, agosto=211, setembro=199, outubro=0, novembro=0, dezembro=0, total=2199.0}
+Dados{idDados=null, dp='001 DP - Sé', natureza='ROUBO DE VEÍCULO', ano=20244, fevereiro3, marco=2, abril=2, maio=0, junho=3, julho=5, agosto=1, setembro=2, outubro=0, novembro=0, dezembro=0, total=22.0}
+Dados{idDados=null, dp='001 DP - Sé', natureza='ROUBO A BANCO', ano=20240, fevereiro0, marco=0, abril=0, maio=0, junho=0, julho=0, agosto=0, setembro=0, outubro=0, novembro=0, dezembro=0, total=0.0}
+Dados{idDados=null, dp='001 DP - Sé', natureza='ROUBO DE CARGA', ano=20240, fevereiro1, marco=0, abril=1, maio=0, junho=2, julho=0, agosto=1, setembro=0, outubro=0, novembro=0, dezembro=0, total=5.0}
+Arquivo processado com sucesso: OcorrenciaMensal(Criminal)-001 DP - Sé_20241104_200805.xlsx
+Arquivo OcorrenciaMensal(Criminal)-001 DP - Sé_20241104_200805.xlsx deletado com sucesso.
+Erro ao baixar e processar arquivos: Access Denied (Service: S3, Status Code: 403, Request ID: WVWD1NE2895AQC6A, Extended Request ID: VkrU6Zjeck6IhVowxZcWbJmMo1yOAdgiNkceRDUrFqVL8kJGxA7LtvEFp6s5px5KMHMZponocWN2GghGNZAtEHGhWA0DhZGehbLH9dRWJEI=)

@@ -6,27 +6,38 @@ import software.amazon.awssdk.services.s3.model.S3Exception;
 import software.amazon.awssdk.core.sync.ResponseTransformer;
 
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.PrintStream;
 import java.nio.file.Files;
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        S3Provider s3Prov = new S3Provider();
-        S3Client s3Client = s3Prov.getS3Client();
+        // Redireciona a saída do console para o arquivo log.txt
+        try (PrintStream logStream = new PrintStream(new FileOutputStream("log.txt", true))) {
+            System.setOut(logStream);
+            System.setErr(logStream);
 
-        // *******************************
-        // *   Primeiro Bucket            *
-        // *******************************
-        String bucketName1 = "s3-insigna";
-        processarBucket(s3Client, bucketName1, false);
+            S3Provider s3Prov = new S3Provider();
+            S3Client s3Client = s3Prov.getS3Client();
 
-        // *******************************
-        // *   Segundo Bucket             *
-        // *******************************
-        String bucketName2 = "s3-insigna-2023";
-        processarBucket(s3Client, bucketName2, true);
+            // *******************************
+            // *   Primeiro Bucket            *
+            // *******************************
+            String bucketName1 = "s3-lab-reynald";
+            processarBucket(s3Client, bucketName1, false);
+
+            // *******************************
+            // *   Segundo Bucket             *
+            // *******************************
+            String bucketName2 = "s3-insigna-2023";
+            processarBucket(s3Client, bucketName2, true);
+
+        } catch (IOException e) {
+            System.err.println("Erro ao criar log.txt: " + e.getMessage());
+        }
     }
 
     public static void processarBucket(S3Client s3Client, String bucketName, boolean usarAnoFixo) {

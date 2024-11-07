@@ -8,9 +8,10 @@ public class InsignaConexao {
     public InsignaConexao(){
         BasicDataSource dataSource = new BasicDataSource();
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-        dataSource.setUrl("jdbc:mysql://localhost:3306/Insigna?useSSL=false&serverTimezone=UTC");
+        dataSource.setUrl("jdbc:mysql://localhost" +
+                ":3306/Insigna?useSSL=false&serverTimezone=UTC");
         dataSource.setUsername("root");
-        dataSource.setPassword("urubu100");
+        dataSource.setPassword("102030");
 
         conexaoComBanco = new JdbcTemplate(dataSource);
     }
