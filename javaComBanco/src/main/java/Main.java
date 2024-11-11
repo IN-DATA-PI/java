@@ -1,3 +1,4 @@
+import org.json.JSONObject;
 import software.amazon.awssdk.services.s3.S3Client;
 import software.amazon.awssdk.services.s3.model.ListObjectsRequest;
 import software.amazon.awssdk.services.s3.model.S3Object;
@@ -5,16 +6,14 @@ import software.amazon.awssdk.services.s3.model.GetObjectRequest;
 import software.amazon.awssdk.services.s3.model.S3Exception;
 import software.amazon.awssdk.core.sync.ResponseTransformer;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.PrintStream;
+import java.io.*;
 import java.nio.file.Files;
 import java.util.List;
 
+
+
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException, InterruptedException {
         // Redireciona a saída do console para o arquivo log.txt
         try (PrintStream logStream = new PrintStream(new FileOutputStream("log.txt", true))) {
             System.setOut(logStream);
@@ -35,9 +34,30 @@ public class Main {
             String bucketName2 = "s3-insigna-2023";
             processarBucket(s3Client, bucketName2, true);
 
+            // Lê o conteúdo do arquivo log.txt
+            String logContent = readLogFile("log.txt");
+
+            // Cria o JSON com o conteúdo do log
+            JSONObject json = new JSONObject();
+            json.put("text", logContent);
+
+            Slack.sendMessage(json);
+
         } catch (IOException e) {
             System.err.println("Erro ao criar log.txt: " + e.getMessage());
         }
+
+    }
+
+    public static String readLogFile(String filePath) throws IOException {
+        StringBuilder content = new StringBuilder();
+        try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
+            String line;
+            while ((line = br.readLine()) != null) {
+                content.append(line).append("\n");
+            }
+        }
+        return content.toString();
     }
 
     public static void processarBucket(S3Client s3Client, String bucketName, boolean usarAnoFixo) {
@@ -94,4 +114,5 @@ public class Main {
             System.err.println("Erro ao processar o arquivo " + arquivo.getName() + ": " + e.getMessage());
         }
     }
+
 }

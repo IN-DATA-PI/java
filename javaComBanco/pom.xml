@@ -67,7 +67,13 @@
             <artifactId>s3</artifactId>
             <version>2.27.21</version>
         </dependency>
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20210307</version>
+        </dependency>
     </dependencies>
+
 
     <build>
         <plugins>
@@ -97,5 +103,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
