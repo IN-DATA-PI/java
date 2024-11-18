@@ -37,16 +37,22 @@ public class Main {
             // Lê o conteúdo do arquivo log.txt
             String logContent = readLogFile("log.txt");
 
-            // Cria o JSON com o conteúdo do log
-            JSONObject json = new JSONObject();
-            json.put("text", logContent);
+            LeitorExcel novaQtd = new LeitorExcel();
 
-            Slack.sendMessage(json);
+            Slack slack = new Slack();
+            Policia policia = new Policia();
+            Delegado delegado = new Delegado();
+
+            slack.enviarNotificacao("Alerta geral!");
+            policia.enviarNotificacao("Ocorrência policial registrada.");
+            delegado.enviarNotificacao("Investigação em andamento \n" +
+                    "Relatório mensal: Foram baixados um total de " +
+                    novaQtd.getQtdBaixados() + " arquivos \n" +
+                    "https://github.com/Reynald-Costa");
 
         } catch (IOException e) {
             System.err.println("Erro ao criar log.txt: " + e.getMessage());
         }
-
     }
 
     public static String readLogFile(String filePath) throws IOException {
@@ -101,12 +107,12 @@ public class Main {
             String nomeArquivo = arquivo.getName();
 
             LeitorExcel leitorExcel = new LeitorExcel();
-            List<Roubos> roubosExtraidos = leitorExcel.extrairDados(nomeArquivo, inputStream, usarAnoFixo); // Passa o flag usarAnoFixo
+            List<Roubo> rouboExtraidos = leitorExcel.extrairDados(nomeArquivo, inputStream, usarAnoFixo); // Passa o flag usarAnoFixo
 
             inputStream.close();
 
-            System.out.println("Roubos extraídos do arquivo " + nomeArquivo + ":");
-            for (Roubos dado : roubosExtraidos) {
+            System.out.println("Roubo extraídos do arquivo " + nomeArquivo + ":");
+            for (Roubo dado : rouboExtraidos) {
                 System.out.println(dado);
             }
 

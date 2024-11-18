@@ -6,19 +6,27 @@ import java.net.http.HttpResponse;
 
 public class Slack {
     private static final HttpClient client = HttpClient.newHttpClient();
-    private static final String URL = "https://hooks.slack.com/services/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";
+    private static final String URL = "https://hooks.slack.com/services/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";
 
-    public static <JSONObject> void sendMessage(JSONObject content) throws IOException, InterruptedException {
+    public void sendMessage(String content) throws IOException, InterruptedException {
+        String jsonPayload = String.format("{\"text\": \"%s\"}", content); // Formata a mensagem como JSON
 
-        HttpRequest request = HttpRequest.newBuilder(
-                        URI.create(URL))
-                .header("accept", "application/json")
-                .POST(HttpRequest.BodyPublishers.ofString(content.toString()))
+        HttpRequest request = HttpRequest.newBuilder(URI.create(URL))
+                .header("Content-Type", "application/json")
+                .POST(HttpRequest.BodyPublishers.ofString(jsonPayload))
                 .build();
 
         HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
 
         System.out.println(String.format("Status: %s", response.statusCode()));
         System.out.println(String.format("Response: %s", response.body()));
+    }
+
+    public void enviarNotificacao(String mensagem) {
+        try {
+            sendMessage(mensagem);
+        } catch (IOException | InterruptedException e) {
+            System.out.println("Erro ao enviar mensagem para o Slack: " + e.getMessage());
+        }
     }
 }

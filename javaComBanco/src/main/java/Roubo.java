@@ -1,4 +1,4 @@
-public class Roubos {
+public class Roubo {
 
     private Integer idRoubos;
     private String dp;
@@ -19,11 +19,11 @@ public class Roubos {
     private Double total;
 
 
-    public Roubos() {
+    public Roubo() {
 
     }
 
-    public Roubos(Integer idRoubos, String dp, String natureza, Integer ano, Integer janeiro, Integer fevereiro, Integer marco, Integer abril, Integer junho, Integer maio, Integer julho, Integer agosto, Integer setembro, Integer outubro, Integer novembro, Integer dezembro, Double total) {
+    public Roubo(Integer idRoubos, String dp, String natureza, Integer ano, Integer janeiro, Integer fevereiro, Integer marco, Integer abril, Integer junho, Integer maio, Integer julho, Integer agosto, Integer setembro, Integer outubro, Integer novembro, Integer dezembro, Double total) {
         this.idRoubos = idRoubos;
         this.dp = dp;
         this.natureza = natureza;
@@ -182,7 +182,7 @@ public class Roubos {
 
     @Override
     public String toString() {
-        return "Roubos{" +
+        return "Roubo{" +
                 "idDados=" + idRoubos +
                 ", dp='" + dp + '\'' +
                 ", natureza='" + natureza + '\'' +

@@ -7,24 +7,24 @@ Baixando arquivo: OcorrenciaMensal(Criminal)-001 DP - Sé_20241104_200805.xlsx
 Iniciando leitura do arquivo OcorrenciaMensal(Criminal)-001 DP - Sé_20241104_200805.xlsx
 
 285
-Registro inserido: Roubos{idDados=null, dp='001 DP - Sé', natureza='TOTAL DE ROUBO - OUTROS (1)', ano=2024285, fevereiro228, marco=270, abril=259, maio=229, junho=240, julho=282, agosto=212, setembro=199, outubro=0, novembro=0, dezembro=0, total=2204.0}
+Registro inserido: Roubo{idDados=null, dp='001 DP - Sé', natureza='TOTAL DE ROUBO - OUTROS (1)', ano=2024285, fevereiro228, marco=270, abril=259, maio=229, junho=240, julho=282, agosto=212, setembro=199, outubro=0, novembro=0, dezembro=0, total=2204.0}
 285
-Registro inserido: Roubos{idDados=null, dp='001 DP - Sé', natureza='ROUBO - OUTROS', ano=2024285, fevereiro227, marco=270, abril=258, maio=229, junho=238, julho=282, agosto=211, setembro=199, outubro=0, novembro=0, dezembro=0, total=2199.0}
+Registro inserido: Roubo{idDados=null, dp='001 DP - Sé', natureza='ROUBO - OUTROS', ano=2024285, fevereiro227, marco=270, abril=258, maio=229, junho=238, julho=282, agosto=211, setembro=199, outubro=0, novembro=0, dezembro=0, total=2199.0}
 4
-Registro inserido: Roubos{idDados=null, dp='001 DP - Sé', natureza='ROUBO DE VEÍCULO', ano=20244, fevereiro3, marco=2, abril=2, maio=0, junho=3, julho=5, agosto=1, setembro=2, outubro=0, novembro=0, dezembro=0, total=22.0}
+Registro inserido: Roubo{idDados=null, dp='001 DP - Sé', natureza='ROUBO DE VEÍCULO', ano=20244, fevereiro3, marco=2, abril=2, maio=0, junho=3, julho=5, agosto=1, setembro=2, outubro=0, novembro=0, dezembro=0, total=22.0}
 0
-Registro inserido: Roubos{idDados=null, dp='001 DP - Sé', natureza='ROUBO A BANCO', ano=20240, fevereiro0, marco=0, abril=0, maio=0, junho=0, julho=0, agosto=0, setembro=0, outubro=0, novembro=0, dezembro=0, total=0.0}
+Registro inserido: Roubo{idDados=null, dp='001 DP - Sé', natureza='ROUBO A BANCO', ano=20240, fevereiro0, marco=0, abril=0, maio=0, junho=0, julho=0, agosto=0, setembro=0, outubro=0, novembro=0, dezembro=0, total=0.0}
 0
-Registro inserido: Roubos{idDados=null, dp='001 DP - Sé', natureza='ROUBO DE CARGA', ano=20240, fevereiro1, marco=0, abril=1, maio=0, junho=2, julho=0, agosto=1, setembro=0, outubro=0, novembro=0, dezembro=0, total=5.0}
+Registro inserido: Roubo{idDados=null, dp='001 DP - Sé', natureza='ROUBO DE CARGA', ano=20240, fevereiro1, marco=0, abril=1, maio=0, junho=2, julho=0, agosto=1, setembro=0, outubro=0, novembro=0, dezembro=0, total=5.0}
 
 Leitura do arquivo finalizada
 
-Roubos extraídos do arquivo OcorrenciaMensal(Criminal)-001 DP - Sé_20241104_200805.xlsx:
-Roubos{idDados=null, dp='001 DP - Sé', natureza='TOTAL DE ROUBO - OUTROS (1)', ano=2024285, fevereiro228, marco=270, abril=259, maio=229, junho=240, julho=282, agosto=212, setembro=199, outubro=0, novembro=0, dezembro=0, total=2204.0}
-Roubos{idDados=null, dp='001 DP - Sé', natureza='ROUBO - OUTROS', ano=2024285, fevereiro227, marco=270, abril=258, maio=229, junho=238, julho=282, agosto=211, setembro=199, outubro=0, novembro=0, dezembro=0, total=2199.0}
-Roubos{idDados=null, dp='001 DP - Sé', natureza='ROUBO DE VEÍCULO', ano=20244, fevereiro3, marco=2, abril=2, maio=0, junho=3, julho=5, agosto=1, setembro=2, outubro=0, novembro=0, dezembro=0, total=22.0}
-Roubos{idDados=null, dp='001 DP - Sé', natureza='ROUBO A BANCO', ano=20240, fevereiro0, marco=0, abril=0, maio=0, junho=0, julho=0, agosto=0, setembro=0, outubro=0, novembro=0, dezembro=0, total=0.0}
-Roubos{idDados=null, dp='001 DP - Sé', natureza='ROUBO DE CARGA', ano=20240, fevereiro1, marco=0, abril=1, maio=0, junho=2, julho=0, agosto=1, setembro=0, outubro=0, novembro=0, dezembro=0, total=5.0}
+Roubo extraídos do arquivo OcorrenciaMensal(Criminal)-001 DP - Sé_20241104_200805.xlsx:
+Roubo{idDados=null, dp='001 DP - Sé', natureza='TOTAL DE ROUBO - OUTROS (1)', ano=2024285, fevereiro228, marco=270, abril=259, maio=229, junho=240, julho=282, agosto=212, setembro=199, outubro=0, novembro=0, dezembro=0, total=2204.0}
+Roubo{idDados=null, dp='001 DP - Sé', natureza='ROUBO - OUTROS', ano=2024285, fevereiro227, marco=270, abril=258, maio=229, junho=238, julho=282, agosto=211, setembro=199, outubro=0, novembro=0, dezembro=0, total=2199.0}
+Roubo{idDados=null, dp='001 DP - Sé', natureza='ROUBO DE VEÍCULO', ano=20244, fevereiro3, marco=2, abril=2, maio=0, junho=3, julho=5, agosto=1, setembro=2, outubro=0, novembro=0, dezembro=0, total=22.0}
+Roubo{idDados=null, dp='001 DP - Sé', natureza='ROUBO A BANCO', ano=20240, fevereiro0, marco=0, abril=0, maio=0, junho=0, julho=0, agosto=0, setembro=0, outubro=0, novembro=0, dezembro=0, total=0.0}
+Roubo{idDados=null, dp='001 DP - Sé', natureza='ROUBO DE CARGA', ano=20240, fevereiro1, marco=0, abril=1, maio=0, junho=2, julho=0, agosto=1, setembro=0, outubro=0, novembro=0, dezembro=0, total=5.0}
 Arquivo processado com sucesso: OcorrenciaMensal(Criminal)-001 DP - Sé_20241104_200805.xlsx
 Arquivo OcorrenciaMensal(Criminal)-001 DP - Sé_20241104_200805.xlsx deletado com sucesso.
 Erro ao baixar e processar arquivos: Access Denied (Service: S3, Status Code: 403, Request ID: S2QTVSQGE41NQC66, Extended Request ID: zHI3MYKjRuUtsBpX/ZD4RUy1xisuayJkN2sr0bLd4c1YqO054pgpjIVdLvD+eNK6a2qzlQZ/4iM=)
@@ -37,24 +37,24 @@ Baixando arquivo: OcorrenciaMensal(Criminal)-001 DP - Sé_20241104_200805.xlsx
 Iniciando leitura do arquivo OcorrenciaMensal(Criminal)-001 DP - Sé_20241104_200805.xlsx
 
 285
-Registro inserido: Roubos{idDados=null, dp='001 DP - Sé', natureza='TOTAL DE ROUBO - OUTROS (1)', ano=2024285, fevereiro228, marco=270, abril=259, maio=229, junho=240, julho=282, agosto=212, setembro=199, outubro=0, novembro=0, dezembro=0, total=2204.0}
+Registro inserido: Roubo{idDados=null, dp='001 DP - Sé', natureza='TOTAL DE ROUBO - OUTROS (1)', ano=2024285, fevereiro228, marco=270, abril=259, maio=229, junho=240, julho=282, agosto=212, setembro=199, outubro=0, novembro=0, dezembro=0, total=2204.0}
 285
-Registro inserido: Roubos{idDados=null, dp='001 DP - Sé', natureza='ROUBO - OUTROS', ano=2024285, fevereiro227, marco=270, abril=258, maio=229, junho=238, julho=282, agosto=211, setembro=199, outubro=0, novembro=0, dezembro=0, total=2199.0}
+Registro inserido: Roubo{idDados=null, dp='001 DP - Sé', natureza='ROUBO - OUTROS', ano=2024285, fevereiro227, marco=270, abril=258, maio=229, junho=238, julho=282, agosto=211, setembro=199, outubro=0, novembro=0, dezembro=0, total=2199.0}
 4
-Registro inserido: Roubos{idDados=null, dp='001 DP - Sé', natureza='ROUBO DE VEÍCULO', ano=20244, fevereiro3, marco=2, abril=2, maio=0, junho=3, julho=5, agosto=1, setembro=2, outubro=0, novembro=0, dezembro=0, total=22.0}
+Registro inserido: Roubo{idDados=null, dp='001 DP - Sé', natureza='ROUBO DE VEÍCULO', ano=20244, fevereiro3, marco=2, abril=2, maio=0, junho=3, julho=5, agosto=1, setembro=2, outubro=0, novembro=0, dezembro=0, total=22.0}
 0
-Registro inserido: Roubos{idDados=null, dp='001 DP - Sé', natureza='ROUBO A BANCO', ano=20240, fevereiro0, marco=0, abril=0, maio=0, junho=0, julho=0, agosto=0, setembro=0, outubro=0, novembro=0, dezembro=0, total=0.0}
+Registro inserido: Roubo{idDados=null, dp='001 DP - Sé', natureza='ROUBO A BANCO', ano=20240, fevereiro0, marco=0, abril=0, maio=0, junho=0, julho=0, agosto=0, setembro=0, outubro=0, novembro=0, dezembro=0, total=0.0}
 0
-Registro inserido: Roubos{idDados=null, dp='001 DP - Sé', natureza='ROUBO DE CARGA', ano=20240, fevereiro1, marco=0, abril=1, maio=0, junho=2, julho=0, agosto=1, setembro=0, outubro=0, novembro=0, dezembro=0, total=5.0}
+Registro inserido: Roubo{idDados=null, dp='001 DP - Sé', natureza='ROUBO DE CARGA', ano=20240, fevereiro1, marco=0, abril=1, maio=0, junho=2, julho=0, agosto=1, setembro=0, outubro=0, novembro=0, dezembro=0, total=5.0}
 
 Leitura do arquivo finalizada
 
-Roubos extraídos do arquivo OcorrenciaMensal(Criminal)-001 DP - Sé_20241104_200805.xlsx:
-Roubos{idDados=null, dp='001 DP - Sé', natureza='TOTAL DE ROUBO - OUTROS (1)', ano=2024285, fevereiro228, marco=270, abril=259, maio=229, junho=240, julho=282, agosto=212, setembro=199, outubro=0, novembro=0, dezembro=0, total=2204.0}
-Roubos{idDados=null, dp='001 DP - Sé', natureza='ROUBO - OUTROS', ano=2024285, fevereiro227, marco=270, abril=258, maio=229, junho=238, julho=282, agosto=211, setembro=199, outubro=0, novembro=0, dezembro=0, total=2199.0}
-Roubos{idDados=null, dp='001 DP - Sé', natureza='ROUBO DE VEÍCULO', ano=20244, fevereiro3, marco=2, abril=2, maio=0, junho=3, julho=5, agosto=1, setembro=2, outubro=0, novembro=0, dezembro=0, total=22.0}
-Roubos{idDados=null, dp='001 DP - Sé', natureza='ROUBO A BANCO', ano=20240, fevereiro0, marco=0, abril=0, maio=0, junho=0, julho=0, agosto=0, setembro=0, outubro=0, novembro=0, dezembro=0, total=0.0}
-Roubos{idDados=null, dp='001 DP - Sé', natureza='ROUBO DE CARGA', ano=20240, fevereiro1, marco=0, abril=1, maio=0, junho=2, julho=0, agosto=1, setembro=0, outubro=0, novembro=0, dezembro=0, total=5.0}
+Roubo extraídos do arquivo OcorrenciaMensal(Criminal)-001 DP - Sé_20241104_200805.xlsx:
+Roubo{idDados=null, dp='001 DP - Sé', natureza='TOTAL DE ROUBO - OUTROS (1)', ano=2024285, fevereiro228, marco=270, abril=259, maio=229, junho=240, julho=282, agosto=212, setembro=199, outubro=0, novembro=0, dezembro=0, total=2204.0}
+Roubo{idDados=null, dp='001 DP - Sé', natureza='ROUBO - OUTROS', ano=2024285, fevereiro227, marco=270, abril=258, maio=229, junho=238, julho=282, agosto=211, setembro=199, outubro=0, novembro=0, dezembro=0, total=2199.0}
+Roubo{idDados=null, dp='001 DP - Sé', natureza='ROUBO DE VEÍCULO', ano=20244, fevereiro3, marco=2, abril=2, maio=0, junho=3, julho=5, agosto=1, setembro=2, outubro=0, novembro=0, dezembro=0, total=22.0}
+Roubo{idDados=null, dp='001 DP - Sé', natureza='ROUBO A BANCO', ano=20240, fevereiro0, marco=0, abril=0, maio=0, junho=0, julho=0, agosto=0, setembro=0, outubro=0, novembro=0, dezembro=0, total=0.0}
+Roubo{idDados=null, dp='001 DP - Sé', natureza='ROUBO DE CARGA', ano=20240, fevereiro1, marco=0, abril=1, maio=0, junho=2, julho=0, agosto=1, setembro=0, outubro=0, novembro=0, dezembro=0, total=5.0}
 Arquivo processado com sucesso: OcorrenciaMensal(Criminal)-001 DP - Sé_20241104_200805.xlsx
 Arquivo OcorrenciaMensal(Criminal)-001 DP - Sé_20241104_200805.xlsx deletado com sucesso.
 Erro ao baixar e processar arquivos: Access Denied (Service: S3, Status Code: 403, Request ID: WVWD1NE2895AQC6A, Extended Request ID: VkrU6Zjeck6IhVowxZcWbJmMo1yOAdgiNkceRDUrFqVL8kJGxA7LtvEFp6s5px5KMHMZponocWN2GghGNZAtEHGhWA0DhZGehbLH9dRWJEI=)
@@ -85,5 +85,219 @@ SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
 Erro ao baixar e processar arquivos: The provided token has expired. (Service: S3, Status Code: 400, Request ID: VWJ1KP906G9PPE4R, Extended Request ID: l6PebBy+d1eYXU+JltjaChERKiK00J0Ps9BiVc89XAhbj9r7LMsNCKJngpLcTMU6QTKHSjZCyOfcup9Xvk0PSAQbQOkjjTvByP/mwH4h7Ww=)
 Erro ao baixar e processar arquivos: The provided token has expired. (Service: S3, Status Code: 400, Request ID: 9SC168H0EZJ7RK2X, Extended Request ID: S2jgxI2oQ1YDkfQbnMJ0BkSZ5ds7dP5vfSPOUCDPATaEgNiWvVAHuB1k3IGWaj3qnMjx6bh2p4w=)
+Status: 200
+Response: ok
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: PP73W6SBVPBWZFWZ, Extended Request ID: ZYqvrXakRSm2pA8ODJfGT4oUSfAXabJAa3RLUF7DORzD7JbEjQ2kiscishKJcnVTfs9M1c91vvU=)
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: 034EA8R9XJGENWKT, Extended Request ID: 0qahl1gFTHQ0Mpq8pmcAKeEOGzSsPd+9NihOM6m6WqaS21/g+hf2qfhzLUjz+GzWaFKJxVvL+H8=)
+Status: 404
+Response: no_service
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: 4KS3FVM8NXAY3A18, Extended Request ID: x5GvQurydJ+OSIgMpatSva0ShwGeLJWdIp/3Or8TUIi8vZzeUeXi3KelMs7vQfP/dEAE3G6nRKg=)
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: 4KS58ZX3HWXJ42R5, Extended Request ID: Lub7QtZezBld4D3h96dhUe9AIBv2UFx04GlUeGKJfuKWJQppNzdWq7bBxt18Bm6EnuKB/cNhLTY=)
+Status: 404
+Response: no_service
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: JSANJQW1AJHC0SN9, Extended Request ID: rff/GuY90s8U41fbWCgAfz5ueaHhQVvtvBY2IW5GKEeypC7W9tiRoJBgT4b4BOz75ZzvYTDT/fs=)
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: CG2X0CCFP6M631ES, Extended Request ID: xp9a9o7Fo7g7CKmzSow7KlEcqFEjYWoWdMkpFHE6Lkl+c1oUq6RDfJPyjibhCqiuZUGfdSk5Y3E=)
+Status: 200
+Response: ok
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: C8A2DJM4M19Q9EGV, Extended Request ID: t/6cWJ10aTB8ra3uKVCvk51Ar1wA48di9YJAOc+1wVUKSpyk8jRQeJdV48oy1KkoGpT1WUKvp3I=)
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: C8A2WR0AKBRGQA69, Extended Request ID: hHpO6o5L30rnI0HdnHqOUrYXr2/UVc9yX/BTpqUugG91sLo0Fe3KiKb6GOger8hLtjxpC+3dDtI=)
+Arquivo enviado com sucesso: {"ok":false,"error":"missing_scope","needed":"files:write:user","provided":"identify,app_configurations:read,app_configurations:write"}
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: 6E11WTC9RGG6DCKT, Extended Request ID: 5gU2vIoxWTezFHyc35fE2VZw02wtXu2/5MPk1tjuCi1pgrXW7PNKsRgas/splEPK6sqMWaz+hJ8=)
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: 6E19EM7MW2YR0CS2, Extended Request ID: d7JVaWBX+bICZdgIWW4mr7NK0kh6GIVwd0PF/x4JuTu+ernJO7AJp/zIgxine6Gfs2zk4pNmClo=)
+Arquivo enviado com sucesso: {"ok":false,"error":"missing_scope","needed":"files:write:user","provided":"identify,app_configurations:read,app_configurations:write"}
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: SAPEQPSK4ZCJ1FZZ, Extended Request ID: 1+D9jVoe0oTN70X6DuDeyCvieER5oHoBumMMzCOs5Rn2XpfL4PFWXuC3Df8Rmsx/TVdqHDs92Ag=)
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: 66EP5D970GA9ZVKT, Extended Request ID: UsSIq5dEJpylgo2RvIKN5HtY1PD/im2v8Tubt4DFu0bQhiuTnyNBvT3C5IX01yfy9/n4IdW93bE=)
+Arquivo enviado com sucesso: {"ok":false,"error":"invalid_auth"}
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: E0ZRHQ2C7RF2Q415, Extended Request ID: A18rfpiGRhQ3VcVDj+HLg3OOmO9wzRDNhg2eSm6mcC0rIUkxWZDMRT3tX3HaDdqnuXmjQbSGGAw=)
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: X4F6N9S3WH8YFK6B, Extended Request ID: ebJHpXsggQicjE2Vi8oRY3stKzS7n9CIjfFKJlIfMgMVXoy7PZM8aBqu8qphMOxyiV9wqAkASu0=)
+Arquivo enviado com sucesso: {"ok":false,"error":"invalid_auth"}
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: 8A5STESNJC8K9X5J, Extended Request ID: DRfZmOnUKZ3d1f4Q5pA+88QHSbsNdlvPOkGqhuWCJQEfzkVnrrq7syfxImL0NGeWhPjl0Fkovq0=)
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: 8A5GRRN7EER6PKAJ, Extended Request ID: fjh9U4QHieeNI/HDwRxIWKYei0ANy1y3l6IU1htl1lal67EnUJk2QBDBe866ix6kvdmTFrGe8Jg=)
+Arquivo enviado com sucesso: {"ok":false,"error":"invalid_auth"}
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: W6C6FK7GG71G6695, Extended Request ID: xmdWhOJZEvPVAhdFMacVeMpLGnf4/g4IvTzIxA3AH4zGJSbPup1jStwMuGqY9cSjudFGB7657/8=)
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: W6C0H9FPR1ZX4YJG, Extended Request ID: TfpsW1Cq5zU0krByfzz67j/jsAVFvrOJrWTqTkqNUwPloxhdZbQB9TLA7luiEZuXRiJGDLepEpo=)
+Arquivo enviado com sucesso: {"ok":false,"error":"invalid_auth"}
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: RBP7E23RW9ZFBPPE, Extended Request ID: u1t+bk07pDjS6PvKgi/C7YAeJKap9L/9bW6rQe9qiSZ3puH1EWo94XXquNLBcgcbKOF4B6sZHiA=)
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: RBP7E0YGXZGJSQAP, Extended Request ID: XHcggxlvFiVk5ULYWb3lFnxXtCvwdvF5+VfMt4b+UN+5tLTlCRL/rLktmqBizA0n7phqfu8ujC8=)
+Arquivo enviado com sucesso: {"ok":false,"error":"invalid_auth"}
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: WH68KQWG00370QTE, Extended Request ID: DJy+5KIDB/YFXU+dL26xcAdGwW8o2TFhnjZCU9QCMduIxeP5VH89VwURwaAa2Gvplwz3K1aI36S11fhPdcdDKYtF8/+yFEWt84vZ9ZI7C1Y=)
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: 5Q6NKDMEETW71129, Extended Request ID: vcebMHCIkYYNYsBqqKEw3XAQZfgL77DQpxfieJF0AERbW/JGi9a6baijzPiUc74/eTwuWEP2EzGJdI9EHhQdm5jEo69TYE0P)
+Arquivo enviado com sucesso: {"ok":false,"error":"invalid_auth"}
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: A49TS0BW7QTSSNNA, Extended Request ID: 1e4bXrz2uWU7qbnJrBTKSXIsumEgO0bhn0IWcRp6iX/nwMqsZNNV3RTm7xJh8eushZu/4+ft9xp8w21LaU4R71sOAI3cn7/Cd8p9nsb0GEs=)
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: A49R80NS0MNA82A9, Extended Request ID: udDdtbsVxm4sEr1PP33/Bvm0p+dyiOotl0rMenha6tyXbGMHKBc2j06KT+HDb92rjAG744+5aGc=)
+Arquivo enviado com sucesso: {"ok":false,"error":"invalid_auth"}
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: 7HAS5C3YQXTVXF8F, Extended Request ID: jXsHE6Y/TOmA1kAnZD3S/uyBMUyghreXo9Dq9dPeLjMsxIu2QpWdbAGBvAStJ5VabqVoBARVJ1uB7vZCugw8P3OC4XKZyfkoFnbhwOosgGk=)
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: 7HAJZE5K4VRTRQGZ, Extended Request ID: 3ZAKOj7/9sua03aRW1ks6WNroXlovfCBV4sCAD/CbrRA6DEpE3njmvNSw6+0e0iFpG/OJn500Fo=)
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: CY0XGGSXZ9GKVJFS, Extended Request ID: 4iCFG5DgLGakLCl8fgqqw5AUiMGQriuEs/2BOaJeCy+ZPHi2DDeHhQLwgPmo/v8lzKI1PIi6aMU=)
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: CY0KN3M7A2XQ204F, Extended Request ID: LvnR3VpbAB4U66gizlgL4RZjUW4rmrzHarCPy135z3+Lr9UOXLCNlLg0sHS8m+PbNfX54bEt3qM=)
+Arquivo enviado com sucesso: {"ok":false,"error":"invalid_auth"}
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: AARGG1XK143Q3QM0, Extended Request ID: QXr6wJ9Fh/Ip2Tb0wVENMwTsrnPC95QcbuBhkcxa0vDXk75g09ATGILDQhkHTT3gdLzfmvubnTk=)
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: 2G9RKRYHG4X6FZG6, Extended Request ID: e79h4sqgK0z5Az4C/5ZJM3slIdCmqwN0M/dbFaRVnacyVY4ImXRpOLeNQoVgqZ9aIKxRIjBGCN4=)
+Status: 200
+Response: ok
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: 0WWSE4SSVV7AT05G, Extended Request ID: aUMxfWAfmTMqmhcdw/3SI8U9KMd5+/vY7F9ijYP4NnkED8MtQIvJbDh9X2XoKaSFj2n4n5R40Yk=)
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: 4MHJZQAJFH5Z8EAM, Extended Request ID: 0DxrfDCC4kxjdqZ+kV99UPxdEQ4WqlouOmj15dK6CzThbcgqE0upiXRkt30EDVLh3hzwk1tuR6YoPaYXsvDsDjVqe5MWvslk)
+Status: 400
+Response: invalid_payload
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: 3GXH9K655VDXV6P9, Extended Request ID: BhjIHLXdvHGuF0wtibh5Q0hsnXz5KMYZoDvXudX1HazObBY2oEAtfX3X56D41mG/vq0lHWVTzqo=)
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: 3GXV80RTKFW3D5WC, Extended Request ID: iNyW8SsShyZ2RjDDIGX4QlxU9THGIH2xlkvWZaZhjtkhtj3DIuIEhVdfeB7UxDf9iGfORUL9/km0w3KXUIukKKf74QOLlled)
+Status: 200
+Response: ok
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: H7RECH71JXNR822E, Extended Request ID: mzVTNxB8+yLB5StipBq+MoyR4hEPrA/vDPdwzUFRal4EtaFA9v4mMkU9+WdK0KnHtSQ60HPROX8=)
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: 1V3W8GF51YE4CXND, Extended Request ID: eoODROGs5uaSV8pDpPSuqet0CHWAf9ivQq7t+Zme1kpFtpbqojcE3l+PwTGiPYSX+u1q3sTI6uorAvC2L9+/UJ62YYBNyMcf)
+Status: 200
+Response: ok
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: 0KPEQHWRB0CA06JD, Extended Request ID: X2/Ed8+lMMp94AWaGg2f+M15m+OHNrbj5ogRLE6QtJJhoux2iVVm1fsB6PFlS+K9/5s8gsaKN3A=)
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: X4YTHGP6X3PVQ0WE, Extended Request ID: OGtiqApNZtKZAnrQH3bMWOv6HxqnYhtASusO0PCDKIbPYwYyoprPlDU6ee2NpjMX9MD9JW7tCDg=)
+Status: 200
+Response: ok
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: SGZADFHMT6743NZW, Extended Request ID: LFrKamDfvOs9lD/lQF6Nbb4ixIG6lmfq8AE2Zu29nKBBUB4w6xVuumBH3GymtWwPlhm6mTIvmvI=)
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: ZPS6MXAD327QXS2T, Extended Request ID: WRQUWL3goVTy/pjLuRe/0F7XaPi0e8aDOIyFaXKeIMUQXA3r9S9oaXDcVK6cfTNVHYl2LulFZxM=)
+Status: 200
+Response: ok
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: 7BDNGMD7SE2B05DS, Extended Request ID: poYvDbeDZKmfqmeMdkSue+DhnMPngcM0MeMHj/VIHBrCI5o+bfksBTpzdGGbMVRf0PRXlC313+4=)
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: 5E47Q74MG7AM3YYJ, Extended Request ID: hNSZ63JeLcY0KVbFf/IrhCnE8Wrw3kMukD1QASfEoWdM33iUidqWoLv8qX6N07mCG/Jxot4+k18=)
+Status: 200
+Response: ok
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: RJ0ZXWHJ0VVF0W4N, Extended Request ID: NrzFH7wGPYNL0JU0h7iZPhhThQppHljr/DFJxYrkevtT+D4xkw9yiFiuG+H520/MgmD1L9Qo/5zkkr6rXRZMvPTqoJ/eyWp1D65vCLe8X6Q=)
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: D2X4WXH57MCA2Z82, Extended Request ID: LtfupMhRloVFNLSLZ33GigvJKuL0TDrYvkwb5qEcUdncaEe4tPbQq386OfbNPvyGHBy4Op6YI7Y=)
+Status: 200
+Response: ok
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: 3SY7V7P6Y6ZB7DXV, Extended Request ID: Ne397YO0IkynKYb3lavk/5H3P2ysHLDHNpphQZRTwVIVMqrVRq2MBOCfcYVnStB1/cv9mmmb/uk6on4OmFG1EhbwxvLN+wv1fTrpQGEpdGQ=)
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: J0G2SARZGFTG0E2J, Extended Request ID: WDBjGYirDtHL+pWHAFtEUypbYKYVh6roCyA8ImBdPo7Q8TnYiRVzkI1opDSVo65rg39NVusi/YM=)
+Status: 200
+Response: ok
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: FF93BDCE07F71X2M, Extended Request ID: OVyqREK6zoa/GfqxLMBn4/ABmVjoOmjTesOx1RxQRKO0W+rIyuPiQhjOa19eh+f2IMRqomOdnbo=)
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: A5WJGTX4FTGZ180V, Extended Request ID: BTE/CYbLtA143HZmXkYXJ7F//JtQ+9qQnQSbJf25HoLR3MU0g4P2O30t9uDA340CB1mWpzRuWNo=)
+Status: 200
+Response: ok
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: RA3WXA3RK0EB64CY, Extended Request ID: LGiLKyY6c4Ny1DcpukU/2120r0+s9bserj6qyYQ7g8A/nHScrBcOqDZF5VG7gkRvQPp0qoQUZ8Q=)
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: V5R482WYX5N3Q773, Extended Request ID: joiqKIrBg0A5JOU5yXOvcRiH5AnnIL3CFG+xUp4s8mYoa1KLoNYaRi1C2jmryuqZYFP04pH1fUXD10aOr0+xOGBzRKNhXIRMV5v16pA9cs0=)
+Status: 200
+Response: ok
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: RDS9K85R3Q8X0E58, Extended Request ID: +oUbK0uSIDjdGIHUNwGng0Mrgdh0G9h8ExT842YbHr923RdgcYsG/CBulrFGnxokzZdeL/XThLI=)
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: RDSB5XS7PDBYKP82, Extended Request ID: 6tRLccvgOISVGT1wQlLH6Go9ve/UZ4FqTkFWTHih0e+diHDahN+k8lZ7GolOqM2qsHm17Rqt1nU=)
+Status: 200
+Response: ok
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: 4FYVDWJXPRT8VSKX, Extended Request ID: zfnMMRI2asMIxtd4gV26D1FHVzsk9MQr9QmBhz5jFnuFwrAQnQHb0b3KR0HGiv17KzBA5Lhobs8=)
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: BKE4XTK3D7NG15W8, Extended Request ID: RBSxEFxIQH+06qj04uCnmf/rRhe36wYeaM/xt89NOGx0BJ8niUkZRZ6SUKOhdmWZVH1q3kgmxK8=)
+Status: 200
+Response: ok
+Status: 200
+Response: ok
+Status: 200
+Response: ok
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: Q7Z8VNZT5G4AWX8N, Extended Request ID: /gczuqrv+gw9pro6sl7mlZ/sioPADvoWudQslxpmFp41E132IJnlI7CE6ZCJ2qSNepbkTyzvNTk=)
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: Q7Z5YJXADW29E3Q6, Extended Request ID: hTiBiat62T7/Zw70F/f6w8k4jXbFAQd+gZ29LQ5it5N3cPjKKox+qfHBdWBqLuwaFIXqHbyNsGI=)
+Status: 200
+Response: ok
+Status: 200
+Response: ok
+Status: 200
+Response: ok
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: Y1D29JA1V21MBGFT, Extended Request ID: BPDV8DIuTznlhLiN7AixQ1cjNzABoweIR/XEpeskX2UKpY0ClunL9uoK46FQ178q22Z4TPUDe4M=)
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: QCSQQS5XM98Z1MV3, Extended Request ID: dmC6vKipwlYaKTugczqVjvisSuKPApyv8Oqfsfc3W1v+iIKCSVdBvaq2JwhPs400GfO2UztH6M8RKR23BZlixA==)
+Status: 200
+Response: ok
+Status: 200
+Response: ok
+Status: 200
+Response: ok
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: PP94X3SMB88N7JGC, Extended Request ID: B0g1M8setDxiloWWLHh09YwRTzQCI1RcQt9qDt/idnzZr/ToWc1Ij06Oiq3SPHdx2WKHfmDrh9U=)
+Erro ao baixar e processar arquivos: The provided token is malformed or otherwise invalid. (Service: S3, Status Code: 400, Request ID: 52VZFRWGBTDEPYVV, Extended Request ID: /CWvP8X+AAzdqtXU133Ie3cY+6bVNK9dzbmtKmc48h17zNcNIiZUOkhcDfkls4h2cBnYnl1aIWUs8em0OP4A6g==)
+Status: 200
+Response: ok
+Status: 200
+Response: ok
 Status: 200
 Response: ok
