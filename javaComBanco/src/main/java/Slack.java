@@ -6,7 +6,7 @@ import java.net.http.HttpResponse;
 
 public class Slack {
     private static final HttpClient client = HttpClient.newHttpClient();
-    private static final String URL = "https://hooks.slack.com/services/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";
+    private static final String URL = "https://hooks.slack.com/services/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";
 
     public void sendMessage(String content) throws IOException, InterruptedException {
         String jsonPayload = String.format("{\"text\": \"%s\"}", content); // Formata a mensagem como JSON

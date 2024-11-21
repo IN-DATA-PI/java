@@ -1,4 +1,3 @@
-import org.json.JSONObject;
 import software.amazon.awssdk.services.s3.S3Client;
 import software.amazon.awssdk.services.s3.model.ListObjectsRequest;
 import software.amazon.awssdk.services.s3.model.S3Object;
@@ -8,6 +7,9 @@ import software.amazon.awssdk.core.sync.ResponseTransformer;
 
 import java.io.*;
 import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -15,9 +17,9 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) throws IOException, InterruptedException {
         // Redireciona a saída do console para o arquivo log.txt
-        try (PrintStream logStream = new PrintStream(new FileOutputStream("log.txt", true))) {
-            System.setOut(logStream);
-            System.setErr(logStream);
+        try (PrintStream logStream = new PrintStream(new FileOutputStream("log.txt", true))){
+                System.setOut(logStream);
+                System.setErr(logStream);
 
             S3Provider s3Prov = new S3Provider();
             S3Client s3Client = s3Prov.getS3Client();
@@ -71,6 +73,7 @@ public class Main {
             List<S3Object> objects = s3Client.listObjects(ListObjectsRequest.builder().bucket(bucketName).build()).contents();
             System.out.println("Baixando arquivos do bucket " + bucketName + ":");
 
+            List<File> arquivos = new ArrayList<File>();
             for (S3Object object : objects) {
                 System.out.println("Baixando arquivo: " + object.key());
 
@@ -81,20 +84,24 @@ public class Main {
 
                 InputStream inputStream = s3Client.getObject(getObjectRequest, ResponseTransformer.toInputStream());
                 File file = new File(object.key());
-                Files.copy(inputStream, file.toPath());
+                Files.copy(inputStream, Paths.get("./arquivos", object.key()), StandardCopyOption.REPLACE_EXISTING);
+                arquivos.add(file);
 
                 // Chama o método para processar o arquivo Excel
-                processarArquivo(file, usarAnoFixo); // Passa o flag usarAnoFixo
+                // Passa o flag usarAnoFixo
 
                 inputStream.close();
 
                 System.out.println("Arquivo processado com sucesso: " + object.key());
 
-                if (file.delete()) {
-                    System.out.println("Arquivo " + object.key() + " deletado com sucesso.");
-                } else {
-                    System.err.println("Erro ao tentar deletar o arquivo " + object.key());
-                }
+//                if (file.delete()) {
+//                    System.out.println("Arquivo " + object.key() + " deletado com sucesso.");
+//                } else {
+//                    System.err.println("Erro ao tentar deletar o arquivo " + object.key());
+//                }
+            }
+            for(File arquivo : arquivos){
+                processarArquivo(arquivo, usarAnoFixo);
             }
         } catch (IOException | S3Exception e) {
             System.err.println("Erro ao baixar e processar arquivos: " + e.getMessage());
@@ -103,16 +110,16 @@ public class Main {
 
     public static void processarArquivo(File arquivo, boolean usarAnoFixo) {
         try {
-            InputStream inputStream = Files.newInputStream(arquivo.toPath());
+            InputStream inputStream =  new FileInputStream("./arquivos/" + arquivo.getName());
             String nomeArquivo = arquivo.getName();
 
             LeitorExcel leitorExcel = new LeitorExcel();
-            List<Roubo> rouboExtraidos = leitorExcel.extrairDados(nomeArquivo, inputStream, usarAnoFixo); // Passa o flag usarAnoFixo
+            List<Dados> dadosExtraidos = leitorExcel.extrairDados(nomeArquivo, inputStream, usarAnoFixo); // Passa o flag usarAnoFixo
 
             inputStream.close();
 
-            System.out.println("Roubo extraídos do arquivo " + nomeArquivo + ":");
-            for (Roubo dado : rouboExtraidos) {
+            System.out.println("Dados extraídos do arquivo " + nomeArquivo + ":");
+            for (Dados dado : dadosExtraidos) {
                 System.out.println(dado);
             }
 
@@ -120,5 +127,4 @@ public class Main {
             System.err.println("Erro ao processar o arquivo " + arquivo.getName() + ": " + e.getMessage());
         }
     }
-
 }
