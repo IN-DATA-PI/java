@@ -8,12 +8,15 @@ import java.net.http.HttpResponse;
 
 public class Slack {
     private static final HttpClient client = HttpClient.newHttpClient();
-    private static final String URL = "https://hooks.slack.com/services/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";
+
+    protected String getWebhookUrl(){
+        return "https://hooks.slack.com/services/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";
+    }
 
     public void sendMessage(String content) throws IOException, InterruptedException {
         String jsonPayload = String.format("{\"text\": \"%s\"}", content); // Formata a mensagem como JSON
 
-        HttpRequest request = HttpRequest.newBuilder(URI.create(URL))
+        HttpRequest request = HttpRequest.newBuilder(URI.create(getWebhookUrl()))
                 .header("Content-Type", "application/json")
                 .POST(HttpRequest.BodyPublishers.ofString(jsonPayload))
                 .build();

@@ -22,8 +22,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-
-
 public class Main {
     public static void main(String[] args) throws IOException, InterruptedException {
 
@@ -50,8 +48,6 @@ public class Main {
             String bucketName2 = "s3-insigna-2023";
             processarBucket(s3Client, bucketName2, true);
 
-            // Lê o conteúdo do arquivo log.txt
-            String logContent = readLogFile("log.txt");
 
             LeitorExcel novaQtd = new LeitorExcel();
 
