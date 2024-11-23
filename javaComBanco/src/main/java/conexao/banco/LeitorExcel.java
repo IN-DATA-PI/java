@@ -10,14 +10,15 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LeitorExcel {
-    private Integer qtdBaixados;
+import static dados.s3.Main.getDataHoraAtual;
 
-    public List<Dados> extrairDados(String nomeArquivo, InputStream arquivo, boolean anoFixo) {
-        List<Dados> dadosExtraidos = new ArrayList<>();
+public class LeitorExcel {
+
+    public List<Roubos> extrairDados(String nomeArquivo, InputStream arquivo, boolean anoFixo) {
+        List<Roubos> roubosExtraidos = new ArrayList<>();
 
         try {
-            System.out.println("\nIniciando leitura do arquivo %s\n".formatted(nomeArquivo));
+            System.out.println("\n%s - Iniciando leitura do arquivo %s".formatted(getDataHoraAtual(), nomeArquivo));
 
             Workbook workbook;
             if (nomeArquivo.endsWith(".xlsx")) {
@@ -38,7 +39,7 @@ public class LeitorExcel {
             } else {
                 ano = extrairAno(nomeArquivo); // Extrair o ano do nome do arquivo
             }
-
+            Integer qtdInseridos = 0;
             for (Row row : sheet) {
                 if (row.getRowNum() == 0) {
                     continue;
@@ -49,45 +50,48 @@ public class LeitorExcel {
                 String natureza = row.getCell(0).getStringCellValue();
 
                 if (valorCelula.contains(palavraProcurada.toLowerCase())) {
-                    Dados dados = new Dados();
-                    dados.setDp(dp);
-                    dados.setAno(ano);
-                    dados.setNatureza(natureza);
+                    Roubos roubos = new Roubos();
+                    roubos.setDp(dp);
+                    roubos.setAno(ano);
+                    roubos.setNatureza(natureza);
 
-                    dados.setJaneiro(converterParaIntegerOuZero(row.getCell(1).getStringCellValue()));
-                    dados.setFevereiro(converterParaIntegerOuZero(row.getCell(2).getStringCellValue()));
-                    dados.setMarco(converterParaIntegerOuZero(row.getCell(3).getStringCellValue()));
-                    dados.setAbril(converterParaIntegerOuZero(row.getCell(4).getStringCellValue()));
-                    dados.setMaio(converterParaIntegerOuZero(row.getCell(5).getStringCellValue()));
-                    dados.setJunho(converterParaIntegerOuZero(row.getCell(6).getStringCellValue()));
-                    dados.setJulho(converterParaIntegerOuZero(row.getCell(7).getStringCellValue()));
-                    dados.setAgosto(converterParaIntegerOuZero(row.getCell(8).getStringCellValue()));
-                    dados.setSetembro(converterParaIntegerOuZero(row.getCell(9).getStringCellValue()));
-                    dados.setOutubro(converterParaIntegerOuZero(row.getCell(10).getStringCellValue()));
-                    dados.setNovembro(converterParaIntegerOuZero(row.getCell(11).getStringCellValue()));
-                    dados.setDezembro(converterParaIntegerOuZero(row.getCell(12).getStringCellValue()));
+                    roubos.setJaneiro(converterParaIntegerOuZero(row.getCell(1).getStringCellValue()));
+                    roubos.setFevereiro(converterParaIntegerOuZero(row.getCell(2).getStringCellValue()));
+                    roubos.setMarco(converterParaIntegerOuZero(row.getCell(3).getStringCellValue()));
+                    roubos.setAbril(converterParaIntegerOuZero(row.getCell(4).getStringCellValue()));
+                    roubos.setMaio(converterParaIntegerOuZero(row.getCell(5).getStringCellValue()));
+                    roubos.setJunho(converterParaIntegerOuZero(row.getCell(6).getStringCellValue()));
+                    roubos.setJulho(converterParaIntegerOuZero(row.getCell(7).getStringCellValue()));
+                    roubos.setAgosto(converterParaIntegerOuZero(row.getCell(8).getStringCellValue()));
+                    roubos.setSetembro(converterParaIntegerOuZero(row.getCell(9).getStringCellValue()));
+                    roubos.setOutubro(converterParaIntegerOuZero(row.getCell(10).getStringCellValue()));
+                    roubos.setNovembro(converterParaIntegerOuZero(row.getCell(11).getStringCellValue()));
+                    roubos.setDezembro(converterParaIntegerOuZero(row.getCell(12).getStringCellValue()));
 
-                    dados.setTotal(dados.getJaneiro() + dados.getFevereiro() + dados.getMarco() +
-                            dados.getAbril() + dados.getMaio() + dados.getJunho() + dados.getJulho() +
-                            dados.getAgosto() + dados.getSetembro() + dados.getOutubro() + dados.getNovembro() +
-                            dados.getDezembro());
+                    roubos.setTotal(roubos.getJaneiro() + roubos.getFevereiro() + roubos.getMarco() +
+                            roubos.getAbril() + roubos.getMaio() + roubos.getJunho() + roubos.getJulho() +
+                            roubos.getAgosto() + roubos.getSetembro() + roubos.getOutubro() + roubos.getNovembro() +
+                            roubos.getDezembro());
 
                     String sql = "INSERT INTO dados (dp, natureza, ano, janeiro, fevereiro, marco, abril, maio, junho, julho, agosto, setembro, outubro, novembro, dezembro, total) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
-                    con.update(sql, dados.getDp(), dados.getNatureza(), dados.getAno(), dados.getJaneiro(),
-                            dados.getFevereiro(), dados.getMarco(), dados.getAbril(), dados.getMaio(),
-                            dados.getJunho(), dados.getJulho(), dados.getAgosto(), dados.getSetembro(),
-                            dados.getOutubro(), dados.getNovembro(), dados.getDezembro(), dados.getTotal());
 
-                    dadosExtraidos.add(dados);
-                    System.out.println("Registro inserido: " + dados);
+                    con.update(sql, roubos.getDp(), roubos.getNatureza(), roubos.getAno(), roubos.getJaneiro(),
+                            roubos.getFevereiro(), roubos.getMarco(), roubos.getAbril(), roubos.getMaio(),
+                            roubos.getJunho(), roubos.getJulho(), roubos.getAgosto(), roubos.getSetembro(),
+                            roubos.getOutubro(), roubos.getNovembro(), roubos.getDezembro(), roubos.getTotal());
+
+                    roubosExtraidos.add(roubos);
+                    System.out.println(getDataHoraAtual() + " - Registro inserido");
+                    qtdInseridos++;
                 }
             }
 
             workbook.close();
 
-            System.out.println("\nLeitura do arquivo finalizada\n");
+            System.out.println(getDataHoraAtual() + " - Quantidade de registos inseridos: " + qtdInseridos);
+            System.out.println("%s - Leitura do arquivo finalizada\n".formatted(getDataHoraAtual()));
 
-            return dadosExtraidos;
+            return roubosExtraidos;
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -110,13 +114,5 @@ public class LeitorExcel {
         } catch (NumberFormatException e) {
             return 0;
         }
-    }
-
-    public Integer getQtdBaixados() {
-        return qtdBaixados;
-    }
-
-    public void setQtdBaixados(Integer qtdBaixados) {
-        this.qtdBaixados = qtdBaixados;
     }
 }

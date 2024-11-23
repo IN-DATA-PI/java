@@ -1,243 +1,126 @@
 SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Baixando arquivos do bucket s3-lab-reynald:
-Baixando arquivo: OcorrenciaMensal(Criminal)-001 DP - Sé_20241104_200805.xlsx
-Arquivo processado com sucesso: OcorrenciaMensal(Criminal)-001 DP - Sé_20241104_200805.xlsx
-Baixando arquivo: OcorrenciaMensal(Criminal)-006 DP - Cambuci_20241118_193217.xlsx
-Arquivo processado com sucesso: OcorrenciaMensal(Criminal)-006 DP - Cambuci_20241118_193217.xlsx
-Baixando arquivo: OcorrenciaMensal(Criminal)-013 DP - Casa Verde_20241120_164751.xlsx
-Arquivo processado com sucesso: OcorrenciaMensal(Criminal)-013 DP - Casa Verde_20241120_164751.xlsx
 
-Iniciando leitura do arquivo OcorrenciaMensal(Criminal)-001 DP - Sé_20241104_200805.xlsx
+23/11/2024 17:49:46 - Baixando arquivos do bucket s3-lab-reynald:
+23/11/2024 17:49:46 - Baixando arquivo: OcorrenciaMensal(Criminal)-001 DP - Sé_20241104_200805.xlsx
+23/11/2024 17:49:46 - Arquivo processado com sucesso
+23/11/2024 17:49:46 - Baixando arquivo: OcorrenciaMensal(Criminal)-006 DP - Cambuci_20241118_193217.xlsx
+23/11/2024 17:49:46 - Arquivo processado com sucesso
+23/11/2024 17:49:46 - Baixando arquivo: OcorrenciaMensal(Criminal)-013 DP - Casa Verde_20241120_164751.xlsx
+23/11/2024 17:49:46 - Arquivo processado com sucesso
 
+23/11/2024 17:49:46 - Iniciando leitura do arquivo OcorrenciaMensal(Criminal)-001 DP - Sé_20241104_200805.xlsx
 285
-Registro inserido: conexao.banco.Dados{idDados=null, dp='001 DP - Sé', natureza='TOTAL DE ROUBO - OUTROS (1)', ano=2024285, fevereiro228, marco=270, abril=259, maio=229, junho=240, julho=282, agosto=212, setembro=199, outubro=0, novembro=0, dezembro=0, total=2204.0}
+23/11/2024 17:49:47 - Registro inserido
 285
-Registro inserido: conexao.banco.Dados{idDados=null, dp='001 DP - Sé', natureza='ROUBO - OUTROS', ano=2024285, fevereiro227, marco=270, abril=258, maio=229, junho=238, julho=282, agosto=211, setembro=199, outubro=0, novembro=0, dezembro=0, total=2199.0}
+23/11/2024 17:49:47 - Registro inserido
 4
-Registro inserido: conexao.banco.Dados{idDados=null, dp='001 DP - Sé', natureza='ROUBO DE VEÍCULO', ano=20244, fevereiro3, marco=2, abril=2, maio=0, junho=3, julho=5, agosto=1, setembro=2, outubro=0, novembro=0, dezembro=0, total=22.0}
+23/11/2024 17:49:47 - Registro inserido
 0
-Registro inserido: conexao.banco.Dados{idDados=null, dp='001 DP - Sé', natureza='ROUBO A BANCO', ano=20240, fevereiro0, marco=0, abril=0, maio=0, junho=0, julho=0, agosto=0, setembro=0, outubro=0, novembro=0, dezembro=0, total=0.0}
+23/11/2024 17:49:47 - Registro inserido
 0
-Registro inserido: conexao.banco.Dados{idDados=null, dp='001 DP - Sé', natureza='ROUBO DE CARGA', ano=20240, fevereiro1, marco=0, abril=1, maio=0, junho=2, julho=0, agosto=1, setembro=0, outubro=0, novembro=0, dezembro=0, total=5.0}
+23/11/2024 17:49:47 - Registro inserido
+23/11/2024 17:49:47 - Quantidade de registos inseridos: 5
+23/11/2024 17:49:47 - Leitura do arquivo finalizada
 
-Leitura do arquivo finalizada
 
-conexao.banco.Dados extraídos do arquivo OcorrenciaMensal(Criminal)-001 DP - Sé_20241104_200805.xlsx:
-conexao.banco.Dados{idDados=null, dp='001 DP - Sé', natureza='TOTAL DE ROUBO - OUTROS (1)', ano=2024285, fevereiro228, marco=270, abril=259, maio=229, junho=240, julho=282, agosto=212, setembro=199, outubro=0, novembro=0, dezembro=0, total=2204.0}
-conexao.banco.Dados{idDados=null, dp='001 DP - Sé', natureza='ROUBO - OUTROS', ano=2024285, fevereiro227, marco=270, abril=258, maio=229, junho=238, julho=282, agosto=211, setembro=199, outubro=0, novembro=0, dezembro=0, total=2199.0}
-conexao.banco.Dados{idDados=null, dp='001 DP - Sé', natureza='ROUBO DE VEÍCULO', ano=20244, fevereiro3, marco=2, abril=2, maio=0, junho=3, julho=5, agosto=1, setembro=2, outubro=0, novembro=0, dezembro=0, total=22.0}
-conexao.banco.Dados{idDados=null, dp='001 DP - Sé', natureza='ROUBO A BANCO', ano=20240, fevereiro0, marco=0, abril=0, maio=0, junho=0, julho=0, agosto=0, setembro=0, outubro=0, novembro=0, dezembro=0, total=0.0}
-conexao.banco.Dados{idDados=null, dp='001 DP - Sé', natureza='ROUBO DE CARGA', ano=20240, fevereiro1, marco=0, abril=1, maio=0, junho=2, julho=0, agosto=1, setembro=0, outubro=0, novembro=0, dezembro=0, total=5.0}
-
-Iniciando leitura do arquivo OcorrenciaMensal(Criminal)-006 DP - Cambuci_20241118_193217.xlsx
-
+23/11/2024 17:49:47 - Iniciando leitura do arquivo OcorrenciaMensal(Criminal)-006 DP - Cambuci_20241118_193217.xlsx
 83
-Registro inserido: conexao.banco.Dados{idDados=null, dp='006 DP - Cambuci', natureza='TOTAL DE ROUBO - OUTROS (1)', ano=202483, fevereiro88, marco=113, abril=67, maio=83, junho=81, julho=69, agosto=83, setembro=87, outubro=143, novembro=99, dezembro=97, total=1093.0}
+23/11/2024 17:49:47 - Registro inserido
 83
-Registro inserido: conexao.banco.Dados{idDados=null, dp='006 DP - Cambuci', natureza='ROUBO - OUTROS', ano=202483, fevereiro87, marco=113, abril=67, maio=83, junho=81, julho=69, agosto=83, setembro=85, outubro=142, novembro=99, dezembro=96, total=1088.0}
+23/11/2024 17:49:47 - Registro inserido
 13
-Registro inserido: conexao.banco.Dados{idDados=null, dp='006 DP - Cambuci', natureza='ROUBO DE VEÍCULO', ano=202413, fevereiro12, marco=5, abril=8, maio=12, junho=5, julho=7, agosto=3, setembro=12, outubro=4, novembro=3, dezembro=6, total=90.0}
+23/11/2024 17:49:47 - Registro inserido
 0
-Registro inserido: conexao.banco.Dados{idDados=null, dp='006 DP - Cambuci', natureza='ROUBO A BANCO', ano=20240, fevereiro0, marco=0, abril=0, maio=0, junho=0, julho=0, agosto=0, setembro=0, outubro=0, novembro=0, dezembro=0, total=0.0}
+23/11/2024 17:49:47 - Registro inserido
 0
-Registro inserido: conexao.banco.Dados{idDados=null, dp='006 DP - Cambuci', natureza='ROUBO DE CARGA', ano=20240, fevereiro1, marco=0, abril=0, maio=0, junho=0, julho=0, agosto=0, setembro=2, outubro=1, novembro=0, dezembro=1, total=5.0}
+23/11/2024 17:49:47 - Registro inserido
+23/11/2024 17:49:47 - Quantidade de registos inseridos: 5
+23/11/2024 17:49:47 - Leitura do arquivo finalizada
 
-Leitura do arquivo finalizada
 
-conexao.banco.Dados extraídos do arquivo OcorrenciaMensal(Criminal)-006 DP - Cambuci_20241118_193217.xlsx:
-conexao.banco.Dados{idDados=null, dp='006 DP - Cambuci', natureza='TOTAL DE ROUBO - OUTROS (1)', ano=202483, fevereiro88, marco=113, abril=67, maio=83, junho=81, julho=69, agosto=83, setembro=87, outubro=143, novembro=99, dezembro=97, total=1093.0}
-conexao.banco.Dados{idDados=null, dp='006 DP - Cambuci', natureza='ROUBO - OUTROS', ano=202483, fevereiro87, marco=113, abril=67, maio=83, junho=81, julho=69, agosto=83, setembro=85, outubro=142, novembro=99, dezembro=96, total=1088.0}
-conexao.banco.Dados{idDados=null, dp='006 DP - Cambuci', natureza='ROUBO DE VEÍCULO', ano=202413, fevereiro12, marco=5, abril=8, maio=12, junho=5, julho=7, agosto=3, setembro=12, outubro=4, novembro=3, dezembro=6, total=90.0}
-conexao.banco.Dados{idDados=null, dp='006 DP - Cambuci', natureza='ROUBO A BANCO', ano=20240, fevereiro0, marco=0, abril=0, maio=0, junho=0, julho=0, agosto=0, setembro=0, outubro=0, novembro=0, dezembro=0, total=0.0}
-conexao.banco.Dados{idDados=null, dp='006 DP - Cambuci', natureza='ROUBO DE CARGA', ano=20240, fevereiro1, marco=0, abril=0, maio=0, junho=0, julho=0, agosto=0, setembro=2, outubro=1, novembro=0, dezembro=1, total=5.0}
-
-Iniciando leitura do arquivo OcorrenciaMensal(Criminal)-013 DP - Casa Verde_20241120_164751.xlsx
-
+23/11/2024 17:49:47 - Iniciando leitura do arquivo OcorrenciaMensal(Criminal)-013 DP - Casa Verde_20241120_164751.xlsx
 90
-Registro inserido: conexao.banco.Dados{idDados=null, dp='013 DP - Casa Verde', natureza='TOTAL DE ROUBO - OUTROS (1)', ano=202490, fevereiro69, marco=104, abril=89, maio=95, junho=74, julho=82, agosto=111, setembro=86, outubro=119, novembro=93, dezembro=125, total=1137.0}
+23/11/2024 17:49:47 - Registro inserido
 89
-Registro inserido: conexao.banco.Dados{idDados=null, dp='013 DP - Casa Verde', natureza='ROUBO - OUTROS', ano=202489, fevereiro69, marco=103, abril=85, maio=95, junho=73, julho=79, agosto=111, setembro=82, outubro=118, novembro=91, dezembro=123, total=1118.0}
+23/11/2024 17:49:47 - Registro inserido
 7
-Registro inserido: conexao.banco.Dados{idDados=null, dp='013 DP - Casa Verde', natureza='ROUBO DE VEÍCULO', ano=20247, fevereiro9, marco=9, abril=5, maio=4, junho=4, julho=9, agosto=5, setembro=11, outubro=16, novembro=9, dezembro=12, total=100.0}
+23/11/2024 17:49:47 - Registro inserido
 0
-Registro inserido: conexao.banco.Dados{idDados=null, dp='013 DP - Casa Verde', natureza='ROUBO A BANCO', ano=20240, fevereiro0, marco=0, abril=0, maio=0, junho=0, julho=0, agosto=0, setembro=0, outubro=0, novembro=0, dezembro=0, total=0.0}
+23/11/2024 17:49:47 - Registro inserido
 1
-Registro inserido: conexao.banco.Dados{idDados=null, dp='013 DP - Casa Verde', natureza='ROUBO DE CARGA', ano=20241, fevereiro0, marco=1, abril=4, maio=0, junho=1, julho=3, agosto=0, setembro=4, outubro=1, novembro=2, dezembro=2, total=19.0}
+23/11/2024 17:49:47 - Registro inserido
+23/11/2024 17:49:47 - Quantidade de registos inseridos: 5
+23/11/2024 17:49:47 - Leitura do arquivo finalizada
 
-Leitura do arquivo finalizada
-
-conexao.banco.Dados extraídos do arquivo OcorrenciaMensal(Criminal)-013 DP - Casa Verde_20241120_164751.xlsx:
-conexao.banco.Dados{idDados=null, dp='013 DP - Casa Verde', natureza='TOTAL DE ROUBO - OUTROS (1)', ano=202490, fevereiro69, marco=104, abril=89, maio=95, junho=74, julho=82, agosto=111, setembro=86, outubro=119, novembro=93, dezembro=125, total=1137.0}
-conexao.banco.Dados{idDados=null, dp='013 DP - Casa Verde', natureza='ROUBO - OUTROS', ano=202489, fevereiro69, marco=103, abril=85, maio=95, junho=73, julho=79, agosto=111, setembro=82, outubro=118, novembro=91, dezembro=123, total=1118.0}
-conexao.banco.Dados{idDados=null, dp='013 DP - Casa Verde', natureza='ROUBO DE VEÍCULO', ano=20247, fevereiro9, marco=9, abril=5, maio=4, junho=4, julho=9, agosto=5, setembro=11, outubro=16, novembro=9, dezembro=12, total=100.0}
-conexao.banco.Dados{idDados=null, dp='013 DP - Casa Verde', natureza='ROUBO A BANCO', ano=20240, fevereiro0, marco=0, abril=0, maio=0, junho=0, julho=0, agosto=0, setembro=0, outubro=0, novembro=0, dezembro=0, total=0.0}
-conexao.banco.Dados{idDados=null, dp='013 DP - Casa Verde', natureza='ROUBO DE CARGA', ano=20241, fevereiro0, marco=1, abril=4, maio=0, junho=1, julho=3, agosto=0, setembro=4, outubro=1, novembro=2, dezembro=2, total=19.0}
-Erro ao baixar e processar arquivos: Access Denied (Service: S3, Status Code: 403, Request ID: DJYQT3Y3DZGKV7SA, Extended Request ID: pfa/Shz5Q0IFdffhlPCkbbtLLbcmLju2XcMsAr/yOGkSihePCkiUN+fYWRO0xq8TTTf8Cod1Tp8=)
+Erro ao baixar e processar arquivos: Access Denied (Service: S3, Status Code: 403, Request ID: E2EFNR4MYF53A6QF, Extended Request ID: QJoINpdMpwzaYf/rv0WCez7ZdsfA034cWbqBUikoZ9ljnjJO5XCi/6AxNXVEMN85FazM+9orfGsix80gO7/94lEgu96EUekhDCTxNDILS98=)
+Status: 404
+Response: no_service
+Status: 404
+Response: no_service
+Status: 404
+Response: no_service
 SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Baixando arquivos do bucket s3-lab-reynald:
-Baixando arquivo: OcorrenciaMensal(Criminal)-001 DP - Sé_20241104_200805.xlsx
-Arquivo processado com sucesso: OcorrenciaMensal(Criminal)-001 DP - Sé_20241104_200805.xlsx
-Baixando arquivo: OcorrenciaMensal(Criminal)-006 DP - Cambuci_20241118_193217.xlsx
-Arquivo processado com sucesso: OcorrenciaMensal(Criminal)-006 DP - Cambuci_20241118_193217.xlsx
-Baixando arquivo: OcorrenciaMensal(Criminal)-013 DP - Casa Verde_20241120_164751.xlsx
-Arquivo processado com sucesso: OcorrenciaMensal(Criminal)-013 DP - Casa Verde_20241120_164751.xlsx
 
-Iniciando leitura do arquivo OcorrenciaMensal(Criminal)-001 DP - Sé_20241104_200805.xlsx
+23/11/2024 17:58:01 - Baixando arquivos do bucket s3-lab-reynald:
+23/11/2024 17:58:01 - Baixando arquivo: OcorrenciaMensal(Criminal)-001 DP - Sé_20241104_200805.xlsx
+23/11/2024 17:58:01 - Arquivo processado com sucesso
+23/11/2024 17:58:01 - Baixando arquivo: OcorrenciaMensal(Criminal)-006 DP - Cambuci_20241118_193217.xlsx
+23/11/2024 17:58:01 - Arquivo processado com sucesso
+23/11/2024 17:58:01 - Baixando arquivo: OcorrenciaMensal(Criminal)-013 DP - Casa Verde_20241120_164751.xlsx
+23/11/2024 17:58:01 - Arquivo processado com sucesso
 
+23/11/2024 17:58:01 - Iniciando leitura do arquivo OcorrenciaMensal(Criminal)-001 DP - Sé_20241104_200805.xlsx
 285
-Registro inserido: conexao.banco.Dados{idDados=null, dp='001 DP - Sé', natureza='TOTAL DE ROUBO - OUTROS (1)', ano=2024285, fevereiro228, marco=270, abril=259, maio=229, junho=240, julho=282, agosto=212, setembro=199, outubro=0, novembro=0, dezembro=0, total=2204.0}
+23/11/2024 17:58:02 - Registro inserido
 285
-Registro inserido: conexao.banco.Dados{idDados=null, dp='001 DP - Sé', natureza='ROUBO - OUTROS', ano=2024285, fevereiro227, marco=270, abril=258, maio=229, junho=238, julho=282, agosto=211, setembro=199, outubro=0, novembro=0, dezembro=0, total=2199.0}
+23/11/2024 17:58:02 - Registro inserido
 4
-Registro inserido: conexao.banco.Dados{idDados=null, dp='001 DP - Sé', natureza='ROUBO DE VEÍCULO', ano=20244, fevereiro3, marco=2, abril=2, maio=0, junho=3, julho=5, agosto=1, setembro=2, outubro=0, novembro=0, dezembro=0, total=22.0}
+23/11/2024 17:58:02 - Registro inserido
 0
-Registro inserido: conexao.banco.Dados{idDados=null, dp='001 DP - Sé', natureza='ROUBO A BANCO', ano=20240, fevereiro0, marco=0, abril=0, maio=0, junho=0, julho=0, agosto=0, setembro=0, outubro=0, novembro=0, dezembro=0, total=0.0}
+23/11/2024 17:58:02 - Registro inserido
 0
-Registro inserido: conexao.banco.Dados{idDados=null, dp='001 DP - Sé', natureza='ROUBO DE CARGA', ano=20240, fevereiro1, marco=0, abril=1, maio=0, junho=2, julho=0, agosto=1, setembro=0, outubro=0, novembro=0, dezembro=0, total=5.0}
+23/11/2024 17:58:02 - Registro inserido
+23/11/2024 17:58:02 - Quantidade de registos inseridos: 5
+23/11/2024 17:58:02 - Leitura do arquivo finalizada
 
-Leitura do arquivo finalizada
 
-conexao.banco.Dados extraídos do arquivo OcorrenciaMensal(Criminal)-001 DP - Sé_20241104_200805.xlsx:
-conexao.banco.Dados{idDados=null, dp='001 DP - Sé', natureza='TOTAL DE ROUBO - OUTROS (1)', ano=2024285, fevereiro228, marco=270, abril=259, maio=229, junho=240, julho=282, agosto=212, setembro=199, outubro=0, novembro=0, dezembro=0, total=2204.0}
-conexao.banco.Dados{idDados=null, dp='001 DP - Sé', natureza='ROUBO - OUTROS', ano=2024285, fevereiro227, marco=270, abril=258, maio=229, junho=238, julho=282, agosto=211, setembro=199, outubro=0, novembro=0, dezembro=0, total=2199.0}
-conexao.banco.Dados{idDados=null, dp='001 DP - Sé', natureza='ROUBO DE VEÍCULO', ano=20244, fevereiro3, marco=2, abril=2, maio=0, junho=3, julho=5, agosto=1, setembro=2, outubro=0, novembro=0, dezembro=0, total=22.0}
-conexao.banco.Dados{idDados=null, dp='001 DP - Sé', natureza='ROUBO A BANCO', ano=20240, fevereiro0, marco=0, abril=0, maio=0, junho=0, julho=0, agosto=0, setembro=0, outubro=0, novembro=0, dezembro=0, total=0.0}
-conexao.banco.Dados{idDados=null, dp='001 DP - Sé', natureza='ROUBO DE CARGA', ano=20240, fevereiro1, marco=0, abril=1, maio=0, junho=2, julho=0, agosto=1, setembro=0, outubro=0, novembro=0, dezembro=0, total=5.0}
-
-Iniciando leitura do arquivo OcorrenciaMensal(Criminal)-006 DP - Cambuci_20241118_193217.xlsx
-
+23/11/2024 17:58:02 - Iniciando leitura do arquivo OcorrenciaMensal(Criminal)-006 DP - Cambuci_20241118_193217.xlsx
 83
-Registro inserido: conexao.banco.Dados{idDados=null, dp='006 DP - Cambuci', natureza='TOTAL DE ROUBO - OUTROS (1)', ano=202483, fevereiro88, marco=113, abril=67, maio=83, junho=81, julho=69, agosto=83, setembro=87, outubro=143, novembro=99, dezembro=97, total=1093.0}
+23/11/2024 17:58:02 - Registro inserido
 83
-Registro inserido: conexao.banco.Dados{idDados=null, dp='006 DP - Cambuci', natureza='ROUBO - OUTROS', ano=202483, fevereiro87, marco=113, abril=67, maio=83, junho=81, julho=69, agosto=83, setembro=85, outubro=142, novembro=99, dezembro=96, total=1088.0}
+23/11/2024 17:58:02 - Registro inserido
 13
-Registro inserido: conexao.banco.Dados{idDados=null, dp='006 DP - Cambuci', natureza='ROUBO DE VEÍCULO', ano=202413, fevereiro12, marco=5, abril=8, maio=12, junho=5, julho=7, agosto=3, setembro=12, outubro=4, novembro=3, dezembro=6, total=90.0}
+23/11/2024 17:58:02 - Registro inserido
 0
-Registro inserido: conexao.banco.Dados{idDados=null, dp='006 DP - Cambuci', natureza='ROUBO A BANCO', ano=20240, fevereiro0, marco=0, abril=0, maio=0, junho=0, julho=0, agosto=0, setembro=0, outubro=0, novembro=0, dezembro=0, total=0.0}
+23/11/2024 17:58:02 - Registro inserido
 0
-Registro inserido: conexao.banco.Dados{idDados=null, dp='006 DP - Cambuci', natureza='ROUBO DE CARGA', ano=20240, fevereiro1, marco=0, abril=0, maio=0, junho=0, julho=0, agosto=0, setembro=2, outubro=1, novembro=0, dezembro=1, total=5.0}
+23/11/2024 17:58:02 - Registro inserido
+23/11/2024 17:58:02 - Quantidade de registos inseridos: 5
+23/11/2024 17:58:02 - Leitura do arquivo finalizada
 
-Leitura do arquivo finalizada
 
-conexao.banco.Dados extraídos do arquivo OcorrenciaMensal(Criminal)-006 DP - Cambuci_20241118_193217.xlsx:
-conexao.banco.Dados{idDados=null, dp='006 DP - Cambuci', natureza='TOTAL DE ROUBO - OUTROS (1)', ano=202483, fevereiro88, marco=113, abril=67, maio=83, junho=81, julho=69, agosto=83, setembro=87, outubro=143, novembro=99, dezembro=97, total=1093.0}
-conexao.banco.Dados{idDados=null, dp='006 DP - Cambuci', natureza='ROUBO - OUTROS', ano=202483, fevereiro87, marco=113, abril=67, maio=83, junho=81, julho=69, agosto=83, setembro=85, outubro=142, novembro=99, dezembro=96, total=1088.0}
-conexao.banco.Dados{idDados=null, dp='006 DP - Cambuci', natureza='ROUBO DE VEÍCULO', ano=202413, fevereiro12, marco=5, abril=8, maio=12, junho=5, julho=7, agosto=3, setembro=12, outubro=4, novembro=3, dezembro=6, total=90.0}
-conexao.banco.Dados{idDados=null, dp='006 DP - Cambuci', natureza='ROUBO A BANCO', ano=20240, fevereiro0, marco=0, abril=0, maio=0, junho=0, julho=0, agosto=0, setembro=0, outubro=0, novembro=0, dezembro=0, total=0.0}
-conexao.banco.Dados{idDados=null, dp='006 DP - Cambuci', natureza='ROUBO DE CARGA', ano=20240, fevereiro1, marco=0, abril=0, maio=0, junho=0, julho=0, agosto=0, setembro=2, outubro=1, novembro=0, dezembro=1, total=5.0}
-
-Iniciando leitura do arquivo OcorrenciaMensal(Criminal)-013 DP - Casa Verde_20241120_164751.xlsx
-
+23/11/2024 17:58:02 - Iniciando leitura do arquivo OcorrenciaMensal(Criminal)-013 DP - Casa Verde_20241120_164751.xlsx
 90
-Registro inserido: conexao.banco.Dados{idDados=null, dp='013 DP - Casa Verde', natureza='TOTAL DE ROUBO - OUTROS (1)', ano=202490, fevereiro69, marco=104, abril=89, maio=95, junho=74, julho=82, agosto=111, setembro=86, outubro=119, novembro=93, dezembro=125, total=1137.0}
+23/11/2024 17:58:02 - Registro inserido
 89
-Registro inserido: conexao.banco.Dados{idDados=null, dp='013 DP - Casa Verde', natureza='ROUBO - OUTROS', ano=202489, fevereiro69, marco=103, abril=85, maio=95, junho=73, julho=79, agosto=111, setembro=82, outubro=118, novembro=91, dezembro=123, total=1118.0}
+23/11/2024 17:58:02 - Registro inserido
 7
-Registro inserido: conexao.banco.Dados{idDados=null, dp='013 DP - Casa Verde', natureza='ROUBO DE VEÍCULO', ano=20247, fevereiro9, marco=9, abril=5, maio=4, junho=4, julho=9, agosto=5, setembro=11, outubro=16, novembro=9, dezembro=12, total=100.0}
+23/11/2024 17:58:02 - Registro inserido
 0
-Registro inserido: conexao.banco.Dados{idDados=null, dp='013 DP - Casa Verde', natureza='ROUBO A BANCO', ano=20240, fevereiro0, marco=0, abril=0, maio=0, junho=0, julho=0, agosto=0, setembro=0, outubro=0, novembro=0, dezembro=0, total=0.0}
+23/11/2024 17:58:02 - Registro inserido
 1
-Registro inserido: conexao.banco.Dados{idDados=null, dp='013 DP - Casa Verde', natureza='ROUBO DE CARGA', ano=20241, fevereiro0, marco=1, abril=4, maio=0, junho=1, julho=3, agosto=0, setembro=4, outubro=1, novembro=2, dezembro=2, total=19.0}
+23/11/2024 17:58:02 - Registro inserido
+23/11/2024 17:58:02 - Quantidade de registos inseridos: 5
+23/11/2024 17:58:02 - Leitura do arquivo finalizada
 
-Leitura do arquivo finalizada
-
-conexao.banco.Dados extraídos do arquivo OcorrenciaMensal(Criminal)-013 DP - Casa Verde_20241120_164751.xlsx:
-conexao.banco.Dados{idDados=null, dp='013 DP - Casa Verde', natureza='TOTAL DE ROUBO - OUTROS (1)', ano=202490, fevereiro69, marco=104, abril=89, maio=95, junho=74, julho=82, agosto=111, setembro=86, outubro=119, novembro=93, dezembro=125, total=1137.0}
-conexao.banco.Dados{idDados=null, dp='013 DP - Casa Verde', natureza='ROUBO - OUTROS', ano=202489, fevereiro69, marco=103, abril=85, maio=95, junho=73, julho=79, agosto=111, setembro=82, outubro=118, novembro=91, dezembro=123, total=1118.0}
-conexao.banco.Dados{idDados=null, dp='013 DP - Casa Verde', natureza='ROUBO DE VEÍCULO', ano=20247, fevereiro9, marco=9, abril=5, maio=4, junho=4, julho=9, agosto=5, setembro=11, outubro=16, novembro=9, dezembro=12, total=100.0}
-conexao.banco.Dados{idDados=null, dp='013 DP - Casa Verde', natureza='ROUBO A BANCO', ano=20240, fevereiro0, marco=0, abril=0, maio=0, junho=0, julho=0, agosto=0, setembro=0, outubro=0, novembro=0, dezembro=0, total=0.0}
-conexao.banco.Dados{idDados=null, dp='013 DP - Casa Verde', natureza='ROUBO DE CARGA', ano=20241, fevereiro0, marco=1, abril=4, maio=0, junho=1, julho=3, agosto=0, setembro=4, outubro=1, novembro=2, dezembro=2, total=19.0}
-Erro ao baixar e processar arquivos: Access Denied (Service: S3, Status Code: 403, Request ID: JNWA5B5F47AH42EA, Extended Request ID: nhZ+DrUQZxeWfFyo03CW+r1CHQ01kb9PUaefxbtWsM3XNKqiVZbWJKOum9+t2Qd5MgtNOPvnD4k=)
+Erro ao baixar e processar arquivos: Access Denied (Service: S3, Status Code: 403, Request ID: 8KE3RXJQK2J37QHF, Extended Request ID: FY3FG/BbLqjyS4SETjFojP8rNb5nE1+LmA/OoZHEcE0XW6CPIyLowk6/H4JgN1eHboo7LQeEbdSvHqUo+oH53d3C2juDgVuKsdxXSSenDdw=)
 Status: 404
 Response: no_service
-Status: 200
-Response: ok
-Status: 200
-Response: ok
-SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
-SLF4J: Defaulting to no-operation (NOP) logger implementation
-SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Baixando arquivos do bucket s3-lab-reynald:
-Baixando arquivo: OcorrenciaMensal(Criminal)-001 DP - Sé_20241104_200805.xlsx
-Arquivo processado com sucesso: OcorrenciaMensal(Criminal)-001 DP - Sé_20241104_200805.xlsx
-Baixando arquivo: OcorrenciaMensal(Criminal)-006 DP - Cambuci_20241118_193217.xlsx
-Arquivo processado com sucesso: OcorrenciaMensal(Criminal)-006 DP - Cambuci_20241118_193217.xlsx
-Baixando arquivo: OcorrenciaMensal(Criminal)-013 DP - Casa Verde_20241120_164751.xlsx
-Arquivo processado com sucesso: OcorrenciaMensal(Criminal)-013 DP - Casa Verde_20241120_164751.xlsx
-
-Iniciando leitura do arquivo OcorrenciaMensal(Criminal)-001 DP - Sé_20241104_200805.xlsx
-
-285
-Registro inserido: conexao.banco.Dados{idDados=null, dp='001 DP - Sé', natureza='TOTAL DE ROUBO - OUTROS (1)', ano=2024285, fevereiro228, marco=270, abril=259, maio=229, junho=240, julho=282, agosto=212, setembro=199, outubro=0, novembro=0, dezembro=0, total=2204.0}
-285
-Registro inserido: conexao.banco.Dados{idDados=null, dp='001 DP - Sé', natureza='ROUBO - OUTROS', ano=2024285, fevereiro227, marco=270, abril=258, maio=229, junho=238, julho=282, agosto=211, setembro=199, outubro=0, novembro=0, dezembro=0, total=2199.0}
-4
-Registro inserido: conexao.banco.Dados{idDados=null, dp='001 DP - Sé', natureza='ROUBO DE VEÍCULO', ano=20244, fevereiro3, marco=2, abril=2, maio=0, junho=3, julho=5, agosto=1, setembro=2, outubro=0, novembro=0, dezembro=0, total=22.0}
-0
-Registro inserido: conexao.banco.Dados{idDados=null, dp='001 DP - Sé', natureza='ROUBO A BANCO', ano=20240, fevereiro0, marco=0, abril=0, maio=0, junho=0, julho=0, agosto=0, setembro=0, outubro=0, novembro=0, dezembro=0, total=0.0}
-0
-Registro inserido: conexao.banco.Dados{idDados=null, dp='001 DP - Sé', natureza='ROUBO DE CARGA', ano=20240, fevereiro1, marco=0, abril=1, maio=0, junho=2, julho=0, agosto=1, setembro=0, outubro=0, novembro=0, dezembro=0, total=5.0}
-
-Leitura do arquivo finalizada
-
-conexao.banco.Dados extraídos do arquivo OcorrenciaMensal(Criminal)-001 DP - Sé_20241104_200805.xlsx:
-conexao.banco.Dados{idDados=null, dp='001 DP - Sé', natureza='TOTAL DE ROUBO - OUTROS (1)', ano=2024285, fevereiro228, marco=270, abril=259, maio=229, junho=240, julho=282, agosto=212, setembro=199, outubro=0, novembro=0, dezembro=0, total=2204.0}
-conexao.banco.Dados{idDados=null, dp='001 DP - Sé', natureza='ROUBO - OUTROS', ano=2024285, fevereiro227, marco=270, abril=258, maio=229, junho=238, julho=282, agosto=211, setembro=199, outubro=0, novembro=0, dezembro=0, total=2199.0}
-conexao.banco.Dados{idDados=null, dp='001 DP - Sé', natureza='ROUBO DE VEÍCULO', ano=20244, fevereiro3, marco=2, abril=2, maio=0, junho=3, julho=5, agosto=1, setembro=2, outubro=0, novembro=0, dezembro=0, total=22.0}
-conexao.banco.Dados{idDados=null, dp='001 DP - Sé', natureza='ROUBO A BANCO', ano=20240, fevereiro0, marco=0, abril=0, maio=0, junho=0, julho=0, agosto=0, setembro=0, outubro=0, novembro=0, dezembro=0, total=0.0}
-conexao.banco.Dados{idDados=null, dp='001 DP - Sé', natureza='ROUBO DE CARGA', ano=20240, fevereiro1, marco=0, abril=1, maio=0, junho=2, julho=0, agosto=1, setembro=0, outubro=0, novembro=0, dezembro=0, total=5.0}
-
-Iniciando leitura do arquivo OcorrenciaMensal(Criminal)-006 DP - Cambuci_20241118_193217.xlsx
-
-83
-Registro inserido: conexao.banco.Dados{idDados=null, dp='006 DP - Cambuci', natureza='TOTAL DE ROUBO - OUTROS (1)', ano=202483, fevereiro88, marco=113, abril=67, maio=83, junho=81, julho=69, agosto=83, setembro=87, outubro=143, novembro=99, dezembro=97, total=1093.0}
-83
-Registro inserido: conexao.banco.Dados{idDados=null, dp='006 DP - Cambuci', natureza='ROUBO - OUTROS', ano=202483, fevereiro87, marco=113, abril=67, maio=83, junho=81, julho=69, agosto=83, setembro=85, outubro=142, novembro=99, dezembro=96, total=1088.0}
-13
-Registro inserido: conexao.banco.Dados{idDados=null, dp='006 DP - Cambuci', natureza='ROUBO DE VEÍCULO', ano=202413, fevereiro12, marco=5, abril=8, maio=12, junho=5, julho=7, agosto=3, setembro=12, outubro=4, novembro=3, dezembro=6, total=90.0}
-0
-Registro inserido: conexao.banco.Dados{idDados=null, dp='006 DP - Cambuci', natureza='ROUBO A BANCO', ano=20240, fevereiro0, marco=0, abril=0, maio=0, junho=0, julho=0, agosto=0, setembro=0, outubro=0, novembro=0, dezembro=0, total=0.0}
-0
-Registro inserido: conexao.banco.Dados{idDados=null, dp='006 DP - Cambuci', natureza='ROUBO DE CARGA', ano=20240, fevereiro1, marco=0, abril=0, maio=0, junho=0, julho=0, agosto=0, setembro=2, outubro=1, novembro=0, dezembro=1, total=5.0}
-
-Leitura do arquivo finalizada
-
-conexao.banco.Dados extraídos do arquivo OcorrenciaMensal(Criminal)-006 DP - Cambuci_20241118_193217.xlsx:
-conexao.banco.Dados{idDados=null, dp='006 DP - Cambuci', natureza='TOTAL DE ROUBO - OUTROS (1)', ano=202483, fevereiro88, marco=113, abril=67, maio=83, junho=81, julho=69, agosto=83, setembro=87, outubro=143, novembro=99, dezembro=97, total=1093.0}
-conexao.banco.Dados{idDados=null, dp='006 DP - Cambuci', natureza='ROUBO - OUTROS', ano=202483, fevereiro87, marco=113, abril=67, maio=83, junho=81, julho=69, agosto=83, setembro=85, outubro=142, novembro=99, dezembro=96, total=1088.0}
-conexao.banco.Dados{idDados=null, dp='006 DP - Cambuci', natureza='ROUBO DE VEÍCULO', ano=202413, fevereiro12, marco=5, abril=8, maio=12, junho=5, julho=7, agosto=3, setembro=12, outubro=4, novembro=3, dezembro=6, total=90.0}
-conexao.banco.Dados{idDados=null, dp='006 DP - Cambuci', natureza='ROUBO A BANCO', ano=20240, fevereiro0, marco=0, abril=0, maio=0, junho=0, julho=0, agosto=0, setembro=0, outubro=0, novembro=0, dezembro=0, total=0.0}
-conexao.banco.Dados{idDados=null, dp='006 DP - Cambuci', natureza='ROUBO DE CARGA', ano=20240, fevereiro1, marco=0, abril=0, maio=0, junho=0, julho=0, agosto=0, setembro=2, outubro=1, novembro=0, dezembro=1, total=5.0}
-
-Iniciando leitura do arquivo OcorrenciaMensal(Criminal)-013 DP - Casa Verde_20241120_164751.xlsx
-
-90
-Registro inserido: conexao.banco.Dados{idDados=null, dp='013 DP - Casa Verde', natureza='TOTAL DE ROUBO - OUTROS (1)', ano=202490, fevereiro69, marco=104, abril=89, maio=95, junho=74, julho=82, agosto=111, setembro=86, outubro=119, novembro=93, dezembro=125, total=1137.0}
-89
-Registro inserido: conexao.banco.Dados{idDados=null, dp='013 DP - Casa Verde', natureza='ROUBO - OUTROS', ano=202489, fevereiro69, marco=103, abril=85, maio=95, junho=73, julho=79, agosto=111, setembro=82, outubro=118, novembro=91, dezembro=123, total=1118.0}
-7
-Registro inserido: conexao.banco.Dados{idDados=null, dp='013 DP - Casa Verde', natureza='ROUBO DE VEÍCULO', ano=20247, fevereiro9, marco=9, abril=5, maio=4, junho=4, julho=9, agosto=5, setembro=11, outubro=16, novembro=9, dezembro=12, total=100.0}
-0
-Registro inserido: conexao.banco.Dados{idDados=null, dp='013 DP - Casa Verde', natureza='ROUBO A BANCO', ano=20240, fevereiro0, marco=0, abril=0, maio=0, junho=0, julho=0, agosto=0, setembro=0, outubro=0, novembro=0, dezembro=0, total=0.0}
-1
-Registro inserido: conexao.banco.Dados{idDados=null, dp='013 DP - Casa Verde', natureza='ROUBO DE CARGA', ano=20241, fevereiro0, marco=1, abril=4, maio=0, junho=1, julho=3, agosto=0, setembro=4, outubro=1, novembro=2, dezembro=2, total=19.0}
-
-Leitura do arquivo finalizada
-
-conexao.banco.Dados extraídos do arquivo OcorrenciaMensal(Criminal)-013 DP - Casa Verde_20241120_164751.xlsx:
-conexao.banco.Dados{idDados=null, dp='013 DP - Casa Verde', natureza='TOTAL DE ROUBO - OUTROS (1)', ano=202490, fevereiro69, marco=104, abril=89, maio=95, junho=74, julho=82, agosto=111, setembro=86, outubro=119, novembro=93, dezembro=125, total=1137.0}
-conexao.banco.Dados{idDados=null, dp='013 DP - Casa Verde', natureza='ROUBO - OUTROS', ano=202489, fevereiro69, marco=103, abril=85, maio=95, junho=73, julho=79, agosto=111, setembro=82, outubro=118, novembro=91, dezembro=123, total=1118.0}
-conexao.banco.Dados{idDados=null, dp='013 DP - Casa Verde', natureza='ROUBO DE VEÍCULO', ano=20247, fevereiro9, marco=9, abril=5, maio=4, junho=4, julho=9, agosto=5, setembro=11, outubro=16, novembro=9, dezembro=12, total=100.0}
-conexao.banco.Dados{idDados=null, dp='013 DP - Casa Verde', natureza='ROUBO A BANCO', ano=20240, fevereiro0, marco=0, abril=0, maio=0, junho=0, julho=0, agosto=0, setembro=0, outubro=0, novembro=0, dezembro=0, total=0.0}
-conexao.banco.Dados{idDados=null, dp='013 DP - Casa Verde', natureza='ROUBO DE CARGA', ano=20241, fevereiro0, marco=1, abril=4, maio=0, junho=1, julho=3, agosto=0, setembro=4, outubro=1, novembro=2, dezembro=2, total=19.0}
-Erro ao baixar e processar arquivos: Access Denied (Service: S3, Status Code: 403, Request ID: SBR0WNW83EP26MC8, Extended Request ID: Sl73kqnK/I9JKR/sdF7YEPeW6/NlZ23turxqPBa2Vtv6/YxWbNuxwS00jm1a7UBStiiomk+K3fM=)
 Status: 404
 Response: no_service
-Status: 200
-Response: ok
-Status: 200
-Response: ok
+Status: 404
+Response: no_service

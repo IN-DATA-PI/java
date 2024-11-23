@@ -1,6 +1,6 @@
 package conexao.banco;
 
-public class Dados {
+public class Roubos {
 
     private Integer idDados;
     private String dp;
@@ -19,13 +19,13 @@ public class Dados {
     private Integer novembro;
     private Integer dezembro;
     private Double total;
+    private Local local;
 
-
-    public Dados() {
+    public Roubos() {
 
     }
 
-    public Dados(Integer idDados, String dp, String natureza, Integer ano, Integer janeiro, Integer fevereiro, Integer marco, Integer abril, Integer junho, Integer maio, Integer julho, Integer agosto, Integer setembro, Integer outubro, Integer novembro, Integer dezembro, Double total) {
+    public Roubos(Integer idDados, String dp, String natureza, Integer ano, Integer janeiro, Integer fevereiro, Integer marco, Integer abril, Integer maio, Integer junho, Integer julho, Integer agosto, Integer setembro, Integer outubro, Integer novembro, Integer dezembro, Double total, Local local) {
         this.idDados = idDados;
         this.dp = dp;
         this.natureza = natureza;
@@ -34,8 +34,8 @@ public class Dados {
         this.fevereiro = fevereiro;
         this.marco = marco;
         this.abril = abril;
-        this.junho = junho;
         this.maio = maio;
+        this.junho = junho;
         this.julho = julho;
         this.agosto = agosto;
         this.setembro = setembro;
@@ -43,7 +43,10 @@ public class Dados {
         this.novembro = novembro;
         this.dezembro = dezembro;
         this.total = total;
+        this.local = local;
     }
+
+
 
     public Integer getidDados() {
         return idDados;
@@ -182,9 +185,17 @@ public class Dados {
         this.total = (double) total;
     }
 
+    public Local getLocal() {
+        return local;
+    }
+
+    public void setLocal(Local local) {
+        this.local = local;
+    }
+
     @Override
     public String toString() {
-        return "conexao.banco.Dados{" +
+        return "conexao.banco.Roubos{" +
                 "idDados=" + idDados +
                 ", dp='" + dp + '\'' +
                 ", natureza='" + natureza + '\'' +
@@ -202,6 +213,7 @@ public class Dados {
                 ", novembro=" + novembro +
                 ", dezembro=" + dezembro +
                 ", total=" + total +
+                ", local=" + local +
                 '}';
 
     }

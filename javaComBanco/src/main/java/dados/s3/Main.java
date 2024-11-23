@@ -1,6 +1,6 @@
 package dados.s3;
 
-import conexao.banco.Dados;
+import conexao.banco.Roubos;
 import conexao.banco.LeitorExcel;
 import noticacoes.slack.NotificacaoDelegado;
 import noticacoes.slack.NotificacaoPolicia;
@@ -17,6 +17,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
@@ -60,7 +61,7 @@ public class Main {
             policia.enviarNotificacao("Ocorrência policial registrada.");
             delegado.enviarNotificacao("Investigação em andamento \n" +
                     "Relatório mensal: Foram baixados um total de " +
-                    novaQtd.getQtdBaixados() + " arquivos \n" +
+                     " arquivos \n" +
                     "https://github.com/Reynald-Costa");
 
         } catch (IOException e) {
@@ -68,25 +69,21 @@ public class Main {
         }
     }
 
-    public static String readLogFile(String filePath) throws IOException {
-        StringBuilder content = new StringBuilder();
-        try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
-            String line;
-            while ((line = br.readLine()) != null) {
-                content.append(line).append("\n");
-            }
-        }
-        return content.toString();
+
+    public static String getDataHoraAtual(){
+        LocalDateTime dataHoraAtual = LocalDateTime.now();
+        String dataHoraFormat = dataHoraAtual.format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss"));
+        return dataHoraFormat;
     }
 
     public static void processarBucket(S3Client s3Client, String bucketName, boolean usarAnoFixo) {
         try {
             List<S3Object> objects = s3Client.listObjects(ListObjectsRequest.builder().bucket(bucketName).build()).contents();
-            System.out.println("Baixando arquivos do bucket " + bucketName + ":");
+            System.out.println("\n" + getDataHoraAtual() + " - Baixando arquivos do bucket " + bucketName + ":");
 
             List<File> arquivos = new ArrayList<File>();
             for (S3Object object : objects) {
-                System.out.println("Baixando arquivo: " + object.key());
+                System.out.println(getDataHoraAtual() + " - Baixando arquivo: " + object.key());
 
                 GetObjectRequest getObjectRequest = GetObjectRequest.builder()
                         .bucket(bucketName)
@@ -103,7 +100,7 @@ public class Main {
 
                 inputStream.close();
 
-                System.out.println("Arquivo processado com sucesso: " + object.key());
+                System.out.println(getDataHoraAtual() + " - Arquivo processado com sucesso");
 
 //                if (file.delete()) {
 //                    System.out.println("Arquivo " + object.key() + " deletado com sucesso.");
@@ -125,14 +122,14 @@ public class Main {
             String nomeArquivo = arquivo.getName();
 
             LeitorExcel leitorExcel = new LeitorExcel();
-            List<Dados> dadosExtraidos = leitorExcel.extrairDados(nomeArquivo, inputStream, usarAnoFixo); // Passa o flag usarAnoFixo
+            List<Roubos> roubosExtraidos = leitorExcel.extrairDados(nomeArquivo, inputStream, usarAnoFixo); // Passa o flag usarAnoFixo
 
             inputStream.close();
 
-            System.out.println("conexao.banco.Dados extraídos do arquivo " + nomeArquivo + ":");
-            for (Dados dado : dadosExtraidos) {
-                System.out.println(dado);
-            }
+            //System.out.println("conexao.banco.Roubos extraídos do arquivo " + nomeArquivo + ":");
+//            for (Roubos dado : roubosExtraidos) {
+//                System.out.println(dado);
+//            }
 
         } catch (IOException e) {
             System.err.println("Erro ao processar o arquivo " + arquivo.getName() + ": " + e.getMessage());

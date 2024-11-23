@@ -87,7 +87,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>dados.s3.Main</mainClass>
+                            <mainClass>roubos.s3.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
@@ -104,3 +104,6 @@
         </plugins>
     </build>
 </project>
+
+
+
