@@ -1,4 +1,6 @@
-public class Policia extends Slack{
+package noticacoes.slack;
+
+public class NotificacaoPolicia extends Slack {
 
     @Override
     public void enviarNotificacao(String mensagem) {

@@ -1,3 +1,5 @@
+package noticacoes.slack;
+
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -26,7 +28,7 @@ public class Slack {
         try {
             sendMessage(mensagem);
         } catch (IOException | InterruptedException e) {
-            System.out.println("Erro ao enviar mensagem para o Slack: " + e.getMessage());
+            System.out.println("Erro ao enviar mensagem para o noticacoes.slack.Slack: " + e.getMessage());
         }
     }
 }

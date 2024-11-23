@@ -87,7 +87,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>Main</mainClass>
+                            <mainClass>dados.s3.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

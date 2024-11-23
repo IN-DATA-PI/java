@@ -1,3 +1,10 @@
+package dados.s3;
+
+import conexao.banco.Dados;
+import conexao.banco.LeitorExcel;
+import noticacoes.slack.NotificacaoDelegado;
+import noticacoes.slack.NotificacaoPolicia;
+import noticacoes.slack.Slack;
 import software.amazon.awssdk.services.s3.S3Client;
 import software.amazon.awssdk.services.s3.model.ListObjectsRequest;
 import software.amazon.awssdk.services.s3.model.S3Object;
@@ -11,6 +18,7 @@ import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
 import java.util.List;
+
 
 
 
@@ -41,9 +49,10 @@ public class Main {
 
             LeitorExcel novaQtd = new LeitorExcel();
 
+
             Slack slack = new Slack();
-            Policia policia = new Policia();
-            Delegado delegado = new Delegado();
+            NotificacaoPolicia policia = new NotificacaoPolicia();
+            NotificacaoDelegado delegado = new NotificacaoDelegado();
 
             slack.enviarNotificacao("Alerta geral!");
             policia.enviarNotificacao("Ocorrência policial registrada.");
@@ -118,7 +127,7 @@ public class Main {
 
             inputStream.close();
 
-            System.out.println("Dados extraídos do arquivo " + nomeArquivo + ":");
+            System.out.println("conexao.banco.Dados extraídos do arquivo " + nomeArquivo + ":");
             for (Dados dado : dadosExtraidos) {
                 System.out.println(dado);
             }

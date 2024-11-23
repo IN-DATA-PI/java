@@ -1,3 +1,5 @@
+package conexao.banco;
+
 public class Dados {
 
     private Integer idDados;
@@ -182,7 +184,7 @@ public class Dados {
 
     @Override
     public String toString() {
-        return "Dados{" +
+        return "conexao.banco.Dados{" +
                 "idDados=" + idDados +
                 ", dp='" + dp + '\'' +
                 ", natureza='" + natureza + '\'' +
