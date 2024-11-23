@@ -16,6 +16,8 @@ import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,8 +26,12 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) throws IOException, InterruptedException {
+
+        LocalDate dataAtual = LocalDate.now();
+        String dataFormatada = dataAtual.format(DateTimeFormatter.ofPattern("MM.yyyy"));
+
         // Redireciona a saída do console para o arquivo log.txt
-        try (PrintStream logStream = new PrintStream(new FileOutputStream("log.txt", true))){
+        try (PrintStream logStream = new PrintStream(new FileOutputStream(dataFormatada, true))){
                 System.setOut(logStream);
                 System.setErr(logStream);
 
