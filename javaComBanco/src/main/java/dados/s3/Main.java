@@ -50,19 +50,17 @@ public class Main {
             processarBucket(s3Client, bucketName2, true);
 
 
-            LeitorExcel novaQtd = new LeitorExcel();
-
-
             Slack slack = new Slack();
             NotificacaoPolicia policia = new NotificacaoPolicia();
             NotificacaoDelegado delegado = new NotificacaoDelegado();
 
             slack.enviarNotificacao("Alerta geral!");
-            policia.enviarNotificacao("Ocorrência policial registrada.");
+            policia.enviarNotificacao("Relatório mensal atualizado!");
             delegado.enviarNotificacao("Investigação em andamento \n" +
-                    "Relatório mensal: Foram baixados um total de " +
-                     " arquivos \n" +
-                    "https://github.com/Reynald-Costa");
+                    "Relatório mensal: Total de " + 0 +
+                     " registros inseridos \n" +
+                    "\uD83D\uDCE5 Acesse o relatório completo." +
+                    "\nhttps://github.com/Reynald-Costa");
 
         } catch (IOException e) {
             System.err.println("Erro ao criar log.txt: " + e.getMessage());

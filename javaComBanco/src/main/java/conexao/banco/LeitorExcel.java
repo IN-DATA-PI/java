@@ -39,7 +39,10 @@ public class LeitorExcel {
             } else {
                 ano = extrairAno(nomeArquivo); // Extrair o ano do nome do arquivo
             }
+
             Integer qtdInseridos = 0;
+
+
             for (Row row : sheet) {
                 if (row.getRowNum() == 0) {
                     continue;

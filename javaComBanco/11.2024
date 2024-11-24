@@ -124,3 +124,66 @@ Status: 404
 Response: no_service
 Status: 404
 Response: no_service
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+
+24/11/2024 13:22:29 - Baixando arquivos do bucket s3-lab-reynald:
+24/11/2024 13:22:29 - Baixando arquivo: OcorrenciaMensal(Criminal)-001 DP - Sé_20241104_200805.xlsx
+24/11/2024 13:22:29 - Arquivo processado com sucesso
+24/11/2024 13:22:29 - Baixando arquivo: OcorrenciaMensal(Criminal)-006 DP - Cambuci_20241118_193217.xlsx
+24/11/2024 13:22:30 - Arquivo processado com sucesso
+24/11/2024 13:22:30 - Baixando arquivo: OcorrenciaMensal(Criminal)-013 DP - Casa Verde_20241120_164751.xlsx
+24/11/2024 13:22:30 - Arquivo processado com sucesso
+
+24/11/2024 13:22:30 - Iniciando leitura do arquivo OcorrenciaMensal(Criminal)-001 DP - Sé_20241104_200805.xlsx
+285
+24/11/2024 13:22:31 - Registro inserido
+285
+24/11/2024 13:22:31 - Registro inserido
+4
+24/11/2024 13:22:31 - Registro inserido
+0
+24/11/2024 13:22:31 - Registro inserido
+0
+24/11/2024 13:22:31 - Registro inserido
+24/11/2024 13:22:31 - Quantidade de registos inseridos: 5
+24/11/2024 13:22:31 - Leitura do arquivo finalizada
+
+
+24/11/2024 13:22:31 - Iniciando leitura do arquivo OcorrenciaMensal(Criminal)-006 DP - Cambuci_20241118_193217.xlsx
+83
+24/11/2024 13:22:31 - Registro inserido
+83
+24/11/2024 13:22:31 - Registro inserido
+13
+24/11/2024 13:22:31 - Registro inserido
+0
+24/11/2024 13:22:31 - Registro inserido
+0
+24/11/2024 13:22:31 - Registro inserido
+24/11/2024 13:22:31 - Quantidade de registos inseridos: 5
+24/11/2024 13:22:31 - Leitura do arquivo finalizada
+
+
+24/11/2024 13:22:31 - Iniciando leitura do arquivo OcorrenciaMensal(Criminal)-013 DP - Casa Verde_20241120_164751.xlsx
+90
+24/11/2024 13:22:31 - Registro inserido
+89
+24/11/2024 13:22:31 - Registro inserido
+7
+24/11/2024 13:22:31 - Registro inserido
+0
+24/11/2024 13:22:31 - Registro inserido
+1
+24/11/2024 13:22:31 - Registro inserido
+24/11/2024 13:22:31 - Quantidade de registos inseridos: 5
+24/11/2024 13:22:31 - Leitura do arquivo finalizada
+
+Erro ao baixar e processar arquivos: Access Denied (Service: S3, Status Code: 403, Request ID: YCA7N7Y1S93YTVJY, Extended Request ID: vmY2l68110JXMXzLou7Pfv9prm0krPbdzbEEc00OtGIsB/hZk5WeUZekcNibXwc4xaUFKq2MEZw=)
+Status: 404
+Response: no_service
+Status: 200
+Response: ok
+Status: 200
+Response: ok
