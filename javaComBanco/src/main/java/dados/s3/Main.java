@@ -52,15 +52,10 @@ public class Main {
 
             Slack slack = new Slack();
             NotificacaoPolicia policia = new NotificacaoPolicia();
-            NotificacaoDelegado delegado = new NotificacaoDelegado();
 
             slack.enviarNotificacao("Alerta geral!");
             policia.enviarNotificacao("Relatório mensal atualizado!");
-            delegado.enviarNotificacao("Investigação em andamento \n" +
-                    "Relatório mensal: Total de " + 0 +
-                     " registros inseridos \n" +
-                    "\uD83D\uDCE5 Acesse o relatório completo." +
-                    "\nhttps://github.com/Reynald-Costa");
+
 
         } catch (IOException e) {
             System.err.println("Erro ao criar log.txt: " + e.getMessage());
@@ -80,9 +75,10 @@ public class Main {
             System.out.println("\n" + getDataHoraAtual() + " - Baixando arquivos do bucket " + bucketName + ":");
 
             List<File> arquivos = new ArrayList<File>();
+            Integer qtdBaixados = 0;
             for (S3Object object : objects) {
                 System.out.println(getDataHoraAtual() + " - Baixando arquivo: " + object.key());
-
+                qtdBaixados++;
                 GetObjectRequest getObjectRequest = GetObjectRequest.builder()
                         .bucket(bucketName)
                         .key(object.key())
@@ -106,6 +102,12 @@ public class Main {
 //                    System.err.println("Erro ao tentar deletar o arquivo " + object.key());
 //                }
             }
+            NotificacaoDelegado delegado = new NotificacaoDelegado();
+            delegado.enviarNotificacao("Investigação em andamento \n" +
+                    "Relatório mensal: Total de " + qtdBaixados +
+                    " arquivos baixados \n" +
+                    "\uD83D\uDCE5 Acesse o relatório completo." +
+                    "\nhttps://github.com/Reynald-Costa");
             for(File arquivo : arquivos){
                 processarArquivo(arquivo, usarAnoFixo);
             }

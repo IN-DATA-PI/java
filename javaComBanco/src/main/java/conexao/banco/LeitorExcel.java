@@ -42,7 +42,6 @@ public class LeitorExcel {
 
             Integer qtdInseridos = 0;
 
-
             for (Row row : sheet) {
                 if (row.getRowNum() == 0) {
                     continue;
@@ -99,6 +98,7 @@ public class LeitorExcel {
             throw new RuntimeException(e);
         }
     }
+
 
     private String extrairDP(String nomeArquivo) {
         int inicio = nomeArquivo.indexOf("-") + 1;
