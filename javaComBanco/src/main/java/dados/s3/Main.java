@@ -40,7 +40,7 @@ public class Main {
             // *******************************
             // *   Primeiro Bucket            *
             // *******************************
-            String bucketName1 = "s3-lab-reynald";
+            String bucketName1 = "s3-insigna";
             processarBucket(s3Client, bucketName1, false);
 
             // *******************************

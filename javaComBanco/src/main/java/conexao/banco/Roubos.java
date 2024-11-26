@@ -47,7 +47,6 @@ public class Roubos {
     }
 
 
-
     public Integer getidDados() {
         return idDados;
     }
@@ -215,6 +214,5 @@ public class Roubos {
                 ", total=" + total +
                 ", local=" + local +
                 '}';
-
     }
 }
