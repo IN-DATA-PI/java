@@ -1,5 +1,6 @@
 package conexao.banco;
 
+import noticacoes.slack.Slack;
 import software.amazon.awssdk.services.s3.endpoints.internal.Value;
 
 import java.util.List;
@@ -12,9 +13,10 @@ public class Departamento {
     private String descricao;
     private String sigla;
     private List<Roubos> roubos;
+    private List<Slack> notificacoes;
 
 
-    public Departamento(Integer idDepartamento, String nome, String telefone, String email, String descricao, String sigla, List<Roubos> roubos) {
+    public Departamento(Integer idDepartamento, String nome, String telefone, String email, String descricao, String sigla, List<Roubos> roubos, List<Slack> notificacoes) {
         this.idDepartamento = idDepartamento;
         this.nome = nome;
         this.telefone = telefone;
@@ -22,6 +24,7 @@ public class Departamento {
         this.descricao = descricao;
         this.sigla = sigla;
         this.roubos = roubos;
+        this.notificacoes = notificacoes;
     }
 
     public Integer getIdDepartamento() {
@@ -80,6 +83,13 @@ public class Departamento {
         this.roubos = roubos;
     }
 
+    public List<Slack> getNotificacoes() {
+        return notificacoes;
+    }
+
+    public void setNotificacoes(List<Slack> notificacoes) {
+        this.notificacoes = notificacoes;
+    }
 
     @Override
     public String toString() {
@@ -91,6 +101,7 @@ public class Departamento {
                 ", descricao='" + descricao + '\'' +
                 ", sigla='" + sigla + '\'' +
                 ", roubos=" + roubos +
+                ", notificacoes=" + notificacoes +
                 '}';
     }
 }
