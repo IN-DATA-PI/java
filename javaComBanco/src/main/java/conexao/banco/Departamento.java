@@ -12,9 +12,9 @@ public class Departamento {
     private String descricao;
     private String sigla;
     private List<Roubos> roubos;
-    private List<Operacoes> operacoes;
 
-    public Departamento(Integer idDepartamento, String nome, String telefone, String email, String descricao, String sigla, List<Roubos> roubos, List<Operacoes> operacoes) {
+
+    public Departamento(Integer idDepartamento, String nome, String telefone, String email, String descricao, String sigla, List<Roubos> roubos) {
         this.idDepartamento = idDepartamento;
         this.nome = nome;
         this.telefone = telefone;
@@ -22,7 +22,6 @@ public class Departamento {
         this.descricao = descricao;
         this.sigla = sigla;
         this.roubos = roubos;
-        this.operacoes = operacoes;
     }
 
     public Integer getIdDepartamento() {
@@ -81,13 +80,6 @@ public class Departamento {
         this.roubos = roubos;
     }
 
-    public List<Operacoes> getOperacoes() {
-        return operacoes;
-    }
-
-    public void setOperacoes(List<Operacoes> operacoes) {
-        this.operacoes = operacoes;
-    }
 
     @Override
     public String toString() {
@@ -99,7 +91,6 @@ public class Departamento {
                 ", descricao='" + descricao + '\'' +
                 ", sigla='" + sigla + '\'' +
                 ", roubos=" + roubos +
-                ", operacoes=" + operacoes +
                 '}';
     }
 }

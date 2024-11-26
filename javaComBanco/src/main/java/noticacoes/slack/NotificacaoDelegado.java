@@ -6,7 +6,7 @@ public class NotificacaoDelegado extends Slack {
 
     @Override
     protected String getWebhookUrl() {
-        return "https://hooks.slack.com/services/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";
+        return "https://hooks.slack.com/services/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";
     }
 
     @Override
