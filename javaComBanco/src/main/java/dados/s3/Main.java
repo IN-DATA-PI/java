@@ -26,8 +26,8 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) throws IOException, InterruptedException {
 
-        LocalDate dataAtual = LocalDate.now();
-        String dataFormatada = dataAtual.format(DateTimeFormatter.ofPattern("MM.yyyy"));
+        LocalDateTime dataAtual = LocalDateTime.now();
+        String dataFormatada = dataAtual.format(DateTimeFormatter.ofPattern("MM.yyyy")) + ".log";
 
         // Redireciona a saída do console para o arquivo log.txt
         try (PrintStream logStream = new PrintStream(new FileOutputStream(dataFormatada, true))){
@@ -40,7 +40,7 @@ public class Main {
             // *******************************
             // *   Primeiro Bucket            *
             // *******************************
-            String bucketName1 = "s3-insigna";
+            String bucketName1 = "s3-lab-reynald";
             processarBucket(s3Client, bucketName1, false);
 
             // *******************************
@@ -49,6 +49,7 @@ public class Main {
             String bucketName2 = "s3-insigna-2023";
             processarBucket(s3Client, bucketName2, true);
 
+            s3Prov.uploadFile("s3-lab-reynald",dataFormatada,dataFormatada);
 
             Slack slack = new Slack();
             NotificacaoPolicia policia = new NotificacaoPolicia();

@@ -18,6 +18,10 @@ public class LeitorExcel {
         List<Roubos> roubosExtraidos = new ArrayList<>();
 
         try {
+            if (!nomeArquivo.endsWith(".xlsx") && !nomeArquivo.endsWith(".xls")) {
+                return roubosExtraidos;
+            }
+
             System.out.println("\n%s - Iniciando leitura do arquivo %s".formatted(getDataHoraAtual(), nomeArquivo));
 
             Workbook workbook;
