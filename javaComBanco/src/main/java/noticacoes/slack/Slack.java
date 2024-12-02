@@ -10,7 +10,7 @@ public class Slack {
     private static final HttpClient client = HttpClient.newHttpClient();
 
     protected String getWebhookUrl(){
-        return "https://hooks.slack.com/services/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";
+        return "";
     }
 
     public void sendMessage(String content) throws IOException, InterruptedException {

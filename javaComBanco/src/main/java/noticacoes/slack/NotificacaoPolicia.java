@@ -4,7 +4,7 @@ public class NotificacaoPolicia extends Slack {
 
     @Override
     protected String getWebhookUrl() {
-        return "https://hooks.slack.com/services/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";
+        return "https://hooks.slack.com/services/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";
     }
 
     @Override

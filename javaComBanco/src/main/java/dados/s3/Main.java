@@ -52,10 +52,7 @@ public class Main {
             s3Prov.uploadFile("s3-lab-reynald",dataFormatada,dataFormatada);
 
             Slack slack = new Slack();
-            NotificacaoPolicia policia = new NotificacaoPolicia();
 
-            slack.enviarNotificacao("Alerta geral!");
-            policia.enviarNotificacao("Relatório mensal atualizado!");
 
 
         } catch (IOException e) {
@@ -109,6 +106,9 @@ public class Main {
                     " arquivos baixados \n" +
                     "\uD83D\uDCE5 Acesse o relatório completo." +
                     "\nhttps://github.com/Reynald-Costa");
+
+            NotificacaoPolicia policia = new NotificacaoPolicia();
+            policia.enviarNotificacao("Relatório mensal atualizado!");
             for(File arquivo : arquivos){
                 processarArquivo(arquivo, usarAnoFixo);
             }
